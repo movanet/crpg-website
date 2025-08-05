@@ -1,0 +1,78 @@
+{{ define "main" }}
+<style>
+  .error-404 {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .error-content {
+    max-width: 600px;
+  }
+  
+  .error-code {
+    font-size: 6rem;
+    font-weight: 300;
+    color: var(--md-sys-color-primary);
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .error-message {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--md-sys-color-on-surface);
+  }
+  
+  .error-description {
+    color: var(--md-sys-color-on-surface);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+  
+  .error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>
+
+<div class="error-404">
+  <div class="error-content">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-message">Page Not Found</h2>
+    <p class="error-description">
+      Sorry, the page you're looking for doesn't exist. It may have been moved or deleted.
+    </p>
+    <div class="error-actions">
+      <a href="/" class="md-button md-button-filled">Go Home</a>
+      <a href="/publications/" class="md-button md-button-outlined">Browse Publications</a>
+      <a href="/contact/" class="md-button md-button-outlined">Contact Us</a>
+    </div>
+    
+    <div style="margin-top: 3rem;">
+      <h3>You might be looking for:</h3>
+      <ul style="text-align: left; display: inline-block;">
+        <li><a href="/research/">Our Research</a></li>
+        <li><a href="/publications/">Publications & Reports</a></li>
+        <li><a href="/team/">Our Team</a></li>
+        <li><a href="/events/">Upcoming Events</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Track 404 errors
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'exception', {
+      'description': '404_' + window.location.pathname,
+      'fatal': false
+    });
+  }
+</script>
+{{ end }}

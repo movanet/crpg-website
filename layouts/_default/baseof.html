@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    
+    {{ partial "seo.html" . }}
+    {{ partial "head-additions.html" . }}
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+    
+    <!-- RSS -->
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+    
+    <!-- Google Analytics -->
+    {{ if .Site.Config.Services.GoogleAnalytics.ID }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Config.Services.GoogleAnalytics.ID }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ .Site.Config.Services.GoogleAnalytics.ID }}');
+    </script>
+    {{ end }}
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Remove Ananke header - using Material Design navigation in main content -->
+    
+    <main id="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+</body>
+</html>

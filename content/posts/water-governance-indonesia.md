@@ -5,6 +5,7 @@ draft: false
 description: "Comprehensive analysis of the proposed water law reforms and recommendations for sustainable water governance"
 categories: ["Water Resources", "Policy Brief"]
 tags: ["water governance", "legislation", "multi-stakeholder"]
+image: "/images/research-water-law.svg"
 ---
 
 CRPG, in collaboration with national and international partners, has released a comprehensive position paper analyzing Indonesia's draft water law. This research provides evidence-based recommendations to ensure sustainable and equitable water resource management.

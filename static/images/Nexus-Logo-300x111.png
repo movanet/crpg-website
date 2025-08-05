@@ -1,0 +1,10 @@
+<svg width="300" height="111" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="111" fill="#E8EAF6"/>
+  <g transform="translate(150, 55.5)">
+    <rect x="-30" y="-18" width="60" height="36" fill="#C5CAE9" rx="4"/>
+    <circle cx="0" cy="-2" r="7" fill="#7986CB"/>
+    <path d="M -22 15 L -8 -8 L 8 15 L 22 -8" stroke="#5C6BC0" stroke-width="2" fill="none"/>
+  </g>
+  <text x="150" y="85" text-anchor="middle" font-family="Arial" font-size="12" fill="#3F51B5">Nexus Logo</text>
+  <text x="150" y="100" text-anchor="middle" font-family="Arial" font-size="10" fill="#757575">Placeholder</text>
+</svg>

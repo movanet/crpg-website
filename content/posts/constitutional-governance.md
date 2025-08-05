@@ -5,6 +5,7 @@ draft: false
 description: "Analysis of constitutional frameworks for effective decentralized governance"
 categories: ["Constitutional Law", "Policy Brief"]
 tags: ["governance", "decentralization", "constitutional law"]
+image: "/images/research-governance.svg"
 ---
 
 CRPG's latest policy brief examines how constitutional frameworks can strengthen governance in Indonesia's decentralized system, offering practical recommendations for institutional reform.

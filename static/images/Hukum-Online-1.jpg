@@ -1,0 +1,10 @@
+<svg width="300" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="150" fill="#FFF8E1"/>
+  <g transform="translate(150, 75)">
+    <rect x="-35" y="-20" width="70" height="40" fill="#FFECB3" rx="4"/>
+    <circle cx="0" cy="-3" r="7" fill="#FFC107"/>
+    <path d="M -25 12 L -10 -10 L 10 12 L 25 -10" stroke="#FF8F00" stroke-width="2" fill="none"/>
+  </g>
+  <text x="150" y="115" text-anchor="middle" font-family="Arial" font-size="12" fill="#F57C00">Hukum Online</text>
+  <text x="150" y="130" text-anchor="middle" font-family="Arial" font-size="10" fill="#757575">Placeholder</text>
+</svg>

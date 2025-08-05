@@ -1,5 +1,11 @@
 {{ define "main" }}
-<a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" aria-label="Toggle theme">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 11-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+  </svg>
+</button>
 
 <!-- Material Design Hero Section -->
 <section class="md-hero">
@@ -9,7 +15,7 @@
     <div class="hero-buttons">
       <a href="/research/" class="md-button md-button-filled">Explore Research</a>
       <a href="/publications/" class="md-button md-button-outlined">View Publications</a>
-      <a href="/about/" class="md-button md-button-outlined">About CRPG</a>
+      <a href="/profile/" class="md-button md-button-outlined">About CRPG</a>
     </div>
   </div>
 </section>
@@ -168,16 +174,50 @@
 </section>
 
 <!-- Partners Section -->
-<section class="section partners-section">
+<section class="section partners-section bg-light">
   <div class="mw8 center ph3">
-    <h2 class="section-title">Our Partners</h2>
-    <div class="partners-carousel">
-      <img src="{{ "images/ausaid.png" | relURL }}" alt="AusAID" class="partner-logo">
-      <img src="{{ "images/bappenas.png" | relURL }}" alt="BAPPENAS" class="partner-logo">
-      <img src="{{ "images/unicef.jpg" | relURL }}" alt="UNICEF" class="partner-logo">
-      <img src="{{ "images/uod_logo.png" | relURL }}" alt="University of Dundee" class="partner-logo">
-      <img src="{{ "images/WRI-300x193.png" | relURL }}" alt="WRI" class="partner-logo">
-      <img src="{{ "images/SWA-Logo.png" | relURL }}" alt="SWA" class="partner-logo">
+    <h2 class="section-title">Our Partners & Clients</h2>
+    <div class="partners-grid">
+      <!-- Row 1 -->
+      <div class="partners-row">
+        <img src="{{ "images/WRI-300x193.png" | relURL }}" alt="World Resources Institute (WRI)" class="partner-logo" loading="lazy">
+        <img src="{{ "images/SWA-Logo.png" | relURL }}" alt="Sanitation and Water for All (SWA)" class="partner-logo" loading="lazy">
+        <img src="{{ "images/unicef.jpg" | relURL }}" alt="UNICEF" class="partner-logo" loading="lazy">
+        <img src="{{ "images/uod_logo.png" | relURL }}" alt="University of Dundee" class="partner-logo" loading="lazy">
+        <img src="{{ "images/ausaid.png" | relURL }}" alt="AusAID" class="partner-logo" loading="lazy">
+      </div>
+      <!-- Row 2 -->
+      <div class="partners-row">
+        <img src="{{ "images/bappenas.png" | relURL }}" alt="BAPPENAS" class="partner-logo" loading="lazy">
+        <img src="{{ "images/kemenlhk.png" | relURL }}" alt="Ministry of Environment and Forestry (KLHK)" class="partner-logo" loading="lazy">
+        <img src="{{ "images/hivos-logo.jpg" | relURL }}" alt="Hivos" class="partner-logo" loading="lazy">
+        <img src="{{ "images/ogp-logo.jpg" | relURL }}" alt="Open Government Partnership (OGP)" class="partner-logo" loading="lazy">
+        <img src="{{ "images/unesco-dundee.jpg" | relURL }}" alt="UNESCO Dundee" class="partner-logo" loading="lazy">
+      </div>
+      <!-- Row 3 -->
+      <div class="partners-row">
+        <img src="{{ "images/logo-Petrolab-300x69.png" | relURL }}" alt="Petrolab" class="partner-logo" loading="lazy">
+        <img src="{{ "images/Biodiversity-Research-Institute-Logo-300x150.png" | relURL }}" alt="Biodiversity Research Institute" class="partner-logo" loading="lazy">
+        <img src="{{ "images/Ecoverse_Hi_Res-1-1-1.png" | relURL }}" alt="Ecoverse" class="partner-logo" loading="lazy">
+        <img src="{{ "images/SNV-1.png" | relURL }}" alt="SNV" class="partner-logo" loading="lazy">
+        <img src="{{ "images/gwp-sea-logo.png" | relURL }}" alt="Global Water Partnership Southeast Asia" class="partner-logo" loading="lazy">
+      </div>
+      <!-- Row 4 -->
+      <div class="partners-row">
+        <img src="{{ "images/waterlex-logo.jpg" | relURL }}" alt="WaterLex" class="partner-logo" loading="lazy">
+        <img src="{{ "images/smec-logo.jpg" | relURL }}" alt="SMEC" class="partner-logo" loading="lazy">
+        <img src="{{ "images/isf.png" | relURL }}" alt="ISF / Engineers Without Borders" class="partner-logo" loading="lazy">
+        <img src="{{ "images/ipen-logo.jpg" | relURL }}" alt="International POPs Elimination Network (IPEN)" class="partner-logo" loading="lazy">
+        <img src="{{ "images/jejaringampl.png" | relURL }}" alt="Jejaring AMPL" class="partner-logo" loading="lazy">
+      </div>
+      <!-- Row 5 -->
+      <div class="partners-row">
+        <img src="{{ "images/unido2.jpg" | relURL }}" alt="UNIDO" class="partner-logo" loading="lazy">
+        <img src="{{ "images/Kemenlu-Logo-300x168.jpg" | relURL }}" alt="Ministry of Foreign Affairs Indonesia" class="partner-logo" loading="lazy">
+        <img src="{{ "images/Logo-Koneksi-300x100.png" | relURL }}" alt="Koneksi" class="partner-logo" loading="lazy">
+        <img src="{{ "images/Hukum-Online-1.jpg" | relURL }}" alt="Hukum Online" class="partner-logo" loading="lazy">
+        <img src="{{ "images/Nexus-Logo-300x111.png" | relURL }}" alt="Nexus" class="partner-logo" loading="lazy">
+      </div>
     </div>
   </div>
 </section>

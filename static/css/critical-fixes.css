@@ -1,16 +1,41 @@
 /* Critical Fixes for Production */
 
-/* Fix text visibility in light mode */
-body:not([data-theme="dark"]) .md-hero-subtitle {
+/* Fix text visibility in light mode - CRITICAL */
+body:not([data-theme="dark"]) .md-hero-subtitle,
+body:not([data-theme="dark"]) .md-hero-title {
   color: white !important;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Fix content visibility */
+/* Fix text visibility in dark mode - CRITICAL */
+[data-theme="dark"] .md-hero-subtitle,
+[data-theme="dark"] .md-hero-title {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Fix content visibility with guaranteed contrast */
 .measure.center p {
-  color: var(--md-sys-color-on-background) !important;
+  color: #424242 !important;
   max-width: 100%;
   text-align: left;
+}
+
+[data-theme="dark"] .measure.center p {
+  color: #E0E0E0 !important;
+}
+
+/* Fix all text content areas */
+.content,
+.page-content,
+main article {
+  color: #424242 !important;
+}
+
+[data-theme="dark"] .content,
+[data-theme="dark"] .page-content,
+[data-theme="dark"] main article {
+  color: #E0E0E0 !important;
 }
 
 /* Fix partner logo sizing */
@@ -56,19 +81,61 @@ form input[type="email"] {
   z-index: 9999;
 }
 
-/* Fix focus area cards text */
+/* Fix focus area cards text with proper contrast */
 .focus-area-card span {
-  color: var(--md-sys-color-on-surface) !important;
+  color: #212121 !important;
 }
 
-/* Fix card titles in all modes */
+[data-theme="dark"] .focus-area-card span {
+  color: #E0E0E0 !important;
+}
+
+/* Fix all paragraph text */
+p {
+  color: #424242 !important;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] p {
+  color: #E0E0E0 !important;
+}
+
+/* Fix list items */
+li {
+  color: #424242 !important;
+}
+
+[data-theme="dark"] li {
+  color: #E0E0E0 !important;
+}
+
+/* Fix card titles in all modes with WCAG AA contrast */
+.md-card-title,
 .md-card-title a {
-  color: var(--md-sys-color-on-surface) !important;
+  color: #212121 !important;
   text-decoration: none;
 }
 
+[data-theme="dark"] .md-card-title,
+[data-theme="dark"] .md-card-title a {
+  color: #E0E0E0 !important;
+}
+
 .md-card-title a:hover {
-  color: var(--md-sys-color-primary) !important;
+  color: #1976D2 !important;
+}
+
+[data-theme="dark"] .md-card-title a:hover {
+  color: #64B5F6 !important;
+}
+
+/* Fix card descriptions */
+.md-card-description {
+  color: #616161 !important;
+}
+
+[data-theme="dark"] .md-card-description {
+  color: #BDBDBD !important;
 }
 
 /* Fix section backgrounds */
@@ -76,9 +143,44 @@ form input[type="email"] {
   background-color: var(--md-sys-color-surface-variant) !important;
 }
 
-/* Fix heading colors */
+/* Fix heading colors with proper contrast */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--md-sys-color-on-surface) !important;
+  color: #212121 !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: #E0E0E0 !important;
+}
+
+/* Fix navigation text contrast - WCAG AA compliant */
+.md-nav {
+  background-color: white !important;
+}
+
+[data-theme="dark"] .md-nav {
+  background-color: #1E1E1E !important;
+}
+
+.md-nav-item {
+  color: #212121 !important;
+  font-weight: 500;
+}
+
+[data-theme="dark"] .md-nav-item {
+  color: #E0E0E0 !important;
+}
+
+.md-nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .md-nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Critical mobile fixes */
@@ -131,4 +233,78 @@ img[loading="lazy"] {
   nav {
     display: none !important;
   }
+}
+
+/* Fix link contrast */
+a {
+  color: #1565C0 !important;
+}
+
+[data-theme="dark"] a {
+  color: #64B5F6 !important;
+}
+
+a:hover {
+  color: #0D47A1 !important;
+}
+
+[data-theme="dark"] a:hover {
+  color: #90CAF9 !important;
+}
+
+/* Fix button contrast */
+.md-button-filled {
+  background-color: #1976D2 !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .md-button-filled {
+  background-color: #64B5F6 !important;
+  color: #121212 !important;
+}
+
+.md-button-outlined {
+  border-color: white !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .md-button-outlined {
+  border-color: #E0E0E0 !important;
+  color: #E0E0E0 !important;
+}
+
+/* Fix form inputs */
+input, textarea, select {
+  background-color: white !important;
+  color: #212121 !important;
+  border-color: #BDBDBD !important;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background-color: #2C2C2C !important;
+  color: #E0E0E0 !important;
+  border-color: #616161 !important;
+}
+
+/* Fix placeholder text */
+::placeholder {
+  color: #757575 !important;
+  opacity: 1;
+}
+
+[data-theme="dark"] ::placeholder {
+  color: #9E9E9E !important;
+}
+
+/* Fix selection colors */
+::selection {
+  background-color: #1976D2;
+  color: white;
+}
+
+[data-theme="dark"] ::selection {
+  background-color: #64B5F6;
+  color: #121212;
 }

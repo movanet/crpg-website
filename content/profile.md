@@ -6,7 +6,19 @@ url: "/profile/"
 
 # Our Profile
 
-The Center for Regulation, Policy and Governance (CRPG) is an Association with Legal Entity (*Perkumpulan Berbadan Hukum*) established through the approval of the Minister of Justice and Human Rights No. AHU-0027408.AH.01.07.TAHUN 2016.
+The Center for Regulation, Policy and Governance (CRPG) is an independent think tank based in Bogor, Indonesia. We are an Association with Legal Entity (*Perkumpulan Berbadan Hukum*) established through the approval of the Minister of Justice and Human Rights No. AHU-0027408.AH.01.07.TAHUN 2016.
+
+## About CRPG
+
+CRPG is a group of scholars passionate to make a difference through action-research. We facilitate research-based decision making, provide consultancies, and promote social responsibility with the aim of making a positive impact on people's lives.
+
+Our work focuses on the intersection of regulation, policy, and governance, with particular emphasis on:
+- Environmental governance and sustainability
+- Water resource management and policy
+- Constitutional and regulatory frameworks
+- Open government and transparency
+- Climate change adaptation
+- Multi-stakeholder engagement
 
 ## Information Details
 

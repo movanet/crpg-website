@@ -26,34 +26,6 @@ To enhance the capacity of government reformers and civil society activists in b
 ### Events
 Events that held or organized by CRPG.
 
-## Clients and Partners
-
-CRPG has worked with various organizations including:
-- World Resources Institute (WRI)
-- Sanitation and Water for All (SWA)
-- Hivos
-- UNICEF
-- University of Dundee
-- AusAID
-- Bappenas
-- Jejaring AMPL
-- WaterLex
-- SMEC
-- UNESCO Dundee
-- UNIDO
-- Engineers Without Borders
-- Ministry of Environment and Forestry (KLHK)
-- Open Government Partnership (OGP)
-- Petrolab
-- Biodiversity Research Institute
-- Ministry of Foreign Affairs (Kemenlu)
-- Ecoverse
-- SNV
-- Global Water Partnership Southeast Asia (GWP-SEA)
-- Koneksi
-- Hukum Online
-- Nexus
-- International POPs Elimination Network (IPEN)
 
 ## Contact Information
 

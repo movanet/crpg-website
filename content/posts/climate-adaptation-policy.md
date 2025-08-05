@@ -5,6 +5,7 @@ draft: false
 description: "Research on effective climate adaptation policies for vulnerable coastal populations"
 categories: ["Environmental Policy", "Research Paper"]
 tags: ["climate change", "adaptation", "coastal communities"]
+image: "/images/research-climate.svg"
 ---
 
 New research from CRPG examines climate adaptation strategies for Indonesia's coastal communities, providing policymakers with evidence-based recommendations for building resilience.

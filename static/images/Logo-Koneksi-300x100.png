@@ -1,0 +1,10 @@
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="100" fill="#F3E5F5"/>
+  <g transform="translate(150, 50)">
+    <rect x="-30" y="-15" width="60" height="30" fill="#E1BEE7" rx="4"/>
+    <circle cx="0" cy="0" r="6" fill="#BA68C8"/>
+    <path d="M -22 15 L -8 -5 L 8 15 L 22 -5" stroke="#9C27B0" stroke-width="2" fill="none"/>
+  </g>
+  <text x="150" y="75" text-anchor="middle" font-family="Arial" font-size="12" fill="#7B1FA2">Koneksi Logo</text>
+  <text x="150" y="90" text-anchor="middle" font-family="Arial" font-size="10" fill="#757575">Placeholder</text>
+</svg>

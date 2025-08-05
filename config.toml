@@ -2,6 +2,7 @@ baseURL = "https://crpg.info/"  # Change to https://[YOUR-ORG].github.io/crpg-we
 languageCode = "en-us"
 title = "Center for Regulation, Policy and Governance"
 theme = "ananke"  # Temporary theme, will be replaced with Hugo Blox
+# Google Analytics moved to services section
 
 # Custom CSS
 [params.ananke_socials]
@@ -38,31 +39,69 @@ theme = "ananke"  # Temporary theme, will be replaced with Hugo Blox
   weight = 2
 
 [[menu.main]]
+  name = "Our Works"
+  url = "/our-works/"
+  weight = 3
+  identifier = "our-works"
+
+[[menu.main]]
   name = "Program"
   url = "/program/"
-  weight = 3
-
-[[menu.main]]
-  name = "Research"
-  url = "/research/"
-  weight = 4
-
-[[menu.main]]
-  name = "Publications"
-  url = "/publications/"
-  weight = 5
+  parent = "our-works"
+  weight = 1
 
 [[menu.main]]
   name = "Events"
   url = "/events/"
-  weight = 6
+  parent = "our-works"
+  weight = 2
+
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  parent = "our-works"
+  weight = 3
+
+[[menu.main]]
+  name = "EHRDD"
+  url = "/ehrdd/"
+  parent = "our-works"
+  weight = 4
 
 [[menu.main]]
   name = "Gallery"
   url = "/gallery/"
+  parent = "our-works"
+  weight = 5
+
+[[menu.main]]
+  name = "Publications"
+  url = "/publications/"
+  weight = 4
+
+[[menu.main]]
+  name = "News"
+  url = "/news/"
+  weight = 5
+
+[[menu.main]]
+  name = "Team"
+  url = "/team/"
+  weight = 6
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
   weight = 7
 
 # Output formats
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
@@ -104,3 +143,8 @@ theme = "ananke"  # Temporary theme, will be replaced with Hugo Blox
   [security.http]
     methods = ['(?i)GET|POST']
     urls = ['.*']
+
+# Services configuration
+[services]
+  [services.googleAnalytics]
+    ID = ""  # Add your GA4 ID here when available

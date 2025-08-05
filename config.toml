@@ -65,6 +65,7 @@ theme = "ananke"  # Temporary theme, will be replaced with Hugo Blox
 # Output formats
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
   
 # Permalinks
 [permalinks]

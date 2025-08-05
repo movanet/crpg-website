@@ -5,7 +5,7 @@
 <section class="md-hero">
   <div class="md-hero-content">
     <h1 class="md-hero-title">{{ .Site.Title }}</h1>
-    <p class="md-hero-subtitle">Advancing sustainable development through rigorous research and evidence-based policy recommendations</p>
+    <p class="md-hero-subtitle">{{ .Description }}</p>
     <div class="hero-buttons">
       <a href="/research/" class="md-button md-button-filled">Explore Research</a>
       <a href="/publications/" class="md-button md-button-outlined">View Publications</a>
@@ -158,15 +158,26 @@
   </div>
 </section>
 
+<!-- About Section -->
+<section class="section">
+  <div class="mw8 center ph3">
+    <div class="measure center tc">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
 <!-- Partners Section -->
 <section class="section partners-section">
   <div class="mw8 center ph3">
     <h2 class="section-title">Our Partners</h2>
     <div class="partners-carousel">
-      <img src="/images/partner-un.png" alt="United Nations" class="partner-logo">
-      <img src="/images/partner-worldbank.png" alt="World Bank" class="partner-logo">
-      <img src="/images/partner-ausaid.png" alt="Australian Aid" class="partner-logo">
-      <img src="/images/partner-bappenas.png" alt="BAPPENAS" class="partner-logo">
+      <img src="{{ "images/ausaid.png" | relURL }}" alt="AusAID" class="partner-logo">
+      <img src="{{ "images/bappenas.png" | relURL }}" alt="BAPPENAS" class="partner-logo">
+      <img src="{{ "images/unicef.jpg" | relURL }}" alt="UNICEF" class="partner-logo">
+      <img src="{{ "images/uod_logo.png" | relURL }}" alt="University of Dundee" class="partner-logo">
+      <img src="{{ "images/WRI-300x193.png" | relURL }}" alt="WRI" class="partner-logo">
+      <img src="{{ "images/SWA-Logo.png" | relURL }}" alt="SWA" class="partner-logo">
     </div>
   </div>
 </section>

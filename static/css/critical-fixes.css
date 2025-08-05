@@ -1,0 +1,134 @@
+/* Critical Fixes for Production */
+
+/* Fix text visibility in light mode */
+body:not([data-theme="dark"]) .md-hero-subtitle {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Fix content visibility */
+.measure.center p {
+  color: var(--md-sys-color-on-background) !important;
+  max-width: 100%;
+  text-align: left;
+}
+
+/* Fix partner logo sizing */
+.partner-logo {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 1rem;
+}
+
+/* Fix navigation spacing */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+/* Fix search index generation */
+.search-index-json {
+  display: none;
+}
+
+/* Fix newsletter form */
+form[action] {
+  position: relative;
+}
+
+form input[type="email"] {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--md-sys-color-outline);
+  border-radius: 8px;
+}
+
+/* Fix mobile menu z-index issues */
+.mobile-menu-panel {
+  z-index: 10000;
+}
+
+.mobile-menu-overlay {
+  z-index: 9999;
+}
+
+/* Fix focus area cards text */
+.focus-area-card span {
+  color: var(--md-sys-color-on-surface) !important;
+}
+
+/* Fix card titles in all modes */
+.md-card-title a {
+  color: var(--md-sys-color-on-surface) !important;
+  text-decoration: none;
+}
+
+.md-card-title a:hover {
+  color: var(--md-sys-color-primary) !important;
+}
+
+/* Fix section backgrounds */
+.bg-light {
+  background-color: var(--md-sys-color-surface-variant) !important;
+}
+
+/* Fix heading colors */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--md-sys-color-on-surface) !important;
+}
+
+/* Critical mobile fixes */
+@media (max-width: 768px) {
+  .md-hero-content {
+    padding: 1rem;
+  }
+  
+  .md-hero-title {
+    font-size: 2rem !important;
+  }
+  
+  .md-hero-subtitle {
+    font-size: 1rem !important;
+  }
+  
+  .partners-carousel {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0;
+  }
+}
+
+/* Fix console errors */
+.no-js .requires-js {
+  display: none;
+}
+
+/* Ensure content is readable */
+main {
+  min-height: 50vh;
+}
+
+/* Fix 404 pages */
+.error-404 {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+/* Performance: Lazy load images below fold */
+img[loading="lazy"] {
+  background-color: var(--md-sys-color-surface-variant);
+}
+
+/* Fix print styles */
+@media print {
+  .no-print,
+  .theme-toggle,
+  .mobile-menu-toggle,
+  nav {
+    display: none !important;
+  }
+}

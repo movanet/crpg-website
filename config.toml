@@ -1,0 +1,77 @@
+baseURL = "https://crpg.info/"  # Change to https://[YOUR-ORG].github.io/crpg-website/ for testing
+languageCode = "en-us"
+title = "Center for Regulation, Policy and Governance"
+theme = "ananke"  # Temporary theme, will be replaced with Hugo Blox
+
+# Basic site parameters
+[params]
+  description = "Center for Regulation, Policy and Governance - Research and policy analysis for sustainable development"
+  author = "CRPG Team"
+  
+# Menu configuration
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 2
+
+[[menu.main]]
+  name = "Publications"
+  url = "/publications/"
+  weight = 3
+
+[[menu.main]]
+  name = "Team"
+  url = "/team/"
+  weight = 4
+
+[[menu.main]]
+  name = "Events"
+  url = "/events/"
+  weight = 5
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  
+# Permalinks
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+  topic = "topics"
+
+# Build configuration
+[build]
+  writeStats = true
+  
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown
+  [markup.highlight]
+    codeFences = true
+    lineNos = false
+    noClasses = false
+    style = "monokai"
+    tabWidth = 2
+
+# Security configuration
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+  [security.funcs]
+    getenv = ['^HUGO_']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']

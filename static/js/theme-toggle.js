@@ -44,20 +44,29 @@
   }
   
   // Initialize theme on page load
-  document.addEventListener('DOMContentLoaded', function() {
+  function init() {
     // Apply saved theme
     applyTheme(getSavedTheme());
     
-    // Create and inject theme toggle button
-    const toggleBtn = document.createElement('button');
-    toggleBtn.className = 'theme-toggle';
-    toggleBtn.setAttribute('aria-label', 'Toggle theme');
-    toggleBtn.addEventListener('click', toggleTheme);
-    document.body.appendChild(toggleBtn);
+    // Create and inject theme toggle button if it doesn't exist
+    if (!document.querySelector('.theme-toggle')) {
+      const toggleBtn = document.createElement('button');
+      toggleBtn.className = 'theme-toggle';
+      toggleBtn.setAttribute('aria-label', 'Toggle theme');
+      toggleBtn.addEventListener('click', toggleTheme);
+      document.body.appendChild(toggleBtn);
+    }
     
     // Set initial icon
     updateToggleIcon(getSavedTheme());
-  });
+  }
+  
+  // Initialize on DOMContentLoaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
   
   // Handle system theme preference changes
   if (window.matchMedia) {

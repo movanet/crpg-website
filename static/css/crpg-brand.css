@@ -1,0 +1,116 @@
+/* CRPG Brand Colors based on Logo */
+:root {
+  /* Brand Colors from Logo */
+  --crpg-black: #000000;
+  --crpg-red: #E53935;
+  --crpg-orange: #FB8C00;
+  --crpg-yellow: #FFB300;
+  
+  /* Light Theme */
+  --md-sys-color-primary: var(--crpg-red);
+  --md-sys-color-primary-container: #FFCDD2;
+  --md-sys-color-secondary: var(--crpg-orange);
+  --md-sys-color-secondary-container: #FFE0B2;
+  --md-sys-color-tertiary: var(--crpg-yellow);
+  --md-sys-color-surface: #FFFFFF;
+  --md-sys-color-surface-variant: #F5F5F5;
+  --md-sys-color-background: #FAFAFA;
+  --md-sys-color-error: #D32F2F;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-on-surface: var(--crpg-black);
+  --md-sys-color-on-background: var(--crpg-black);
+  --md-sys-color-outline: #E0E0E0;
+}
+
+/* Dark Theme Override */
+[data-theme="dark"] {
+  --md-sys-color-primary: #EF5350;
+  --md-sys-color-primary-container: #B71C1C;
+  --md-sys-color-secondary: #FF9800;
+  --md-sys-color-secondary-container: #E65100;
+  --md-sys-color-tertiary: #FFC107;
+  --md-sys-color-surface: #1E1E1E;
+  --md-sys-color-surface-variant: #2C2C2C;
+  --md-sys-color-background: #121212;
+  --md-sys-color-error: #EF5350;
+  --md-sys-color-on-primary: #000000;
+  --md-sys-color-on-surface: #E0E0E0;
+  --md-sys-color-on-background: #E0E0E0;
+  --md-sys-color-outline: #424242;
+}
+
+/* Override Ananke navigation colors */
+.bg-black,
+.bg-near-black {
+  background-color: var(--crpg-black) !important;
+}
+
+/* CRPG Logo in Navigation */
+.site-logo {
+  height: 48px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+/* Brand text styling */
+.crpg-brand-text {
+  color: var(--crpg-black);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Hero section with brand gradient */
+.md-hero {
+  background: linear-gradient(135deg, var(--crpg-red) 0%, var(--crpg-orange) 50%, var(--crpg-yellow) 100%);
+}
+
+/* Material buttons with brand colors */
+.md-button-filled {
+  background-color: var(--crpg-red);
+  color: white;
+}
+
+.md-button-filled:hover {
+  background-color: #C62828;
+}
+
+.md-button-outlined {
+  border-color: white;
+  color: white;
+}
+
+[data-theme="dark"] .md-button-outlined {
+  border-color: var(--crpg-orange);
+  color: var(--crpg-orange);
+}
+
+/* Fix navigation text colors */
+.md-nav-brand,
+.md-nav-item {
+  color: var(--md-sys-color-on-surface) !important;
+}
+
+/* Section titles with brand color */
+.section-title {
+  color: var(--crpg-black);
+}
+
+[data-theme="dark"] .section-title {
+  color: var(--md-sys-color-on-background);
+}
+
+/* Fix Material Design overrides */
+body {
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+}
+
+/* Ensure theme toggle is visible */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  background-color: var(--md-sys-color-surface);
+  border: 2px solid var(--md-sys-color-outline);
+}

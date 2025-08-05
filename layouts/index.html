@@ -1,0 +1,112 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="mw8 center ph3">
+    <div class="hero-content">
+      <h1 class="hero-title">{{ .Site.Title }}</h1>
+      <p class="hero-tagline">Advancing sustainable development through rigorous research and evidence-based policy recommendations</p>
+      <div class="hero-buttons">
+        <a href="/research/" class="btn btn-primary">Latest Research</a>
+        <a href="/publications/" class="btn btn-secondary">All Publications</a>
+        <a href="/about/" class="btn btn-secondary">About CRPG</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest Research Section -->
+<section class="section">
+  <div class="mw8 center ph3">
+    <h2 class="section-title">Latest Research</h2>
+    <div class="research-grid">
+      {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
+      <article class="research-card">
+        {{ if .Params.image }}
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="research-card-image">
+        {{ else }}
+        <div class="research-card-image" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);"></div>
+        {{ end }}
+        <div class="research-card-content">
+          <h3 class="research-card-title">
+            <a href="{{ .RelPermalink }}" class="link dim black">{{ .Title }}</a>
+          </h3>
+          <p class="research-card-summary">
+            {{ .Summary | truncate 150 }}
+          </p>
+          <div class="research-card-meta">
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+            <a href="{{ .RelPermalink }}" class="link dim blue">Read More →</a>
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    <div class="tc mt4">
+      <a href="/posts/" class="btn btn-primary">View All Research</a>
+    </div>
+  </div>
+</section>
+
+<!-- Focus Areas Section -->
+<section class="section bg-light">
+  <div class="mw8 center ph3">
+    <h2 class="section-title">Our Focus Areas</h2>
+    <div class="focus-areas-grid">
+      <div class="focus-area-card">
+        <div class="focus-area-icon">⚖️</div>
+        <h3 class="focus-area-title">Constitutional Law & Governance</h3>
+        <p class="focus-area-description">Strengthening democratic institutions and governance frameworks for sustainable development</p>
+      </div>
+      <div class="focus-area-card">
+        <div class="focus-area-icon">🌿</div>
+        <h3 class="focus-area-title">Environmental Policy</h3>
+        <p class="focus-area-description">Climate change adaptation and mitigation strategies for Indonesia</p>
+      </div>
+      <div class="focus-area-card">
+        <div class="focus-area-icon">💧</div>
+        <h3 class="focus-area-title">Water Resources Management</h3>
+        <p class="focus-area-description">Sustainable water governance and policy solutions for communities</p>
+      </div>
+      <div class="focus-area-card">
+        <div class="focus-area-icon">📋</div>
+        <h3 class="focus-area-title">Regulatory Analysis</h3>
+        <p class="focus-area-description">Evidence-based regulatory frameworks for development</p>
+      </div>
+      <div class="focus-area-card">
+        <div class="focus-area-icon">🤝</div>
+        <h3 class="focus-area-title">Multi-stakeholder Engagement</h3>
+        <p class="focus-area-description">Facilitating inclusive policy development processes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partners Section -->
+<section class="section partners-section">
+  <div class="mw8 center ph3">
+    <h2 class="section-title">Our Partners</h2>
+    <div class="partners-carousel">
+      <img src="/images/partner-un.png" alt="United Nations" class="partner-logo">
+      <img src="/images/partner-worldbank.png" alt="World Bank" class="partner-logo">
+      <img src="/images/partner-ausaid.png" alt="Australian Aid" class="partner-logo">
+      <img src="/images/partner-bappenas.png" alt="BAPPENAS" class="partner-logo">
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="section">
+  <div class="mw8 center ph3 tc">
+    <h2 class="section-title">Stay Informed</h2>
+    <p class="f4 lh-copy measure center mb4">
+      Subscribe to our newsletter for the latest research, policy briefs, and updates from CRPG.
+    </p>
+    <form class="measure center">
+      <input type="email" placeholder="Enter your email" class="input-reset ba b--black-20 pa3 mb3 db w-100">
+      <button type="submit" class="btn btn-primary db w-100">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+{{ end }}

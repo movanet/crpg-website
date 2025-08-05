@@ -3,9 +3,27 @@ languageCode = "en-us"
 title = "Center for Regulation, Policy and Governance"
 theme = "ananke"  # Temporary theme, will be replaced with Hugo Blox
 
-# Basic site parameters
+# Custom CSS
+[params.ananke_socials]
 [params]
+  custom_css = ["css/custom.css"]
+  favicon = ""
+  site_logo = ""
   description = "Center for Regulation, Policy and Governance - Research and policy analysis for sustainable development"
+  facebook = ""
+  twitter = ""
+  instagram = ""
+  youtube = ""
+  github = ""
+  gitlab = ""
+  linkedin = ""
+  mastodon = ""
+  slack = ""
+  stackoverflow = ""
+  rss = true
+  background_color_class = "bg-white"
+  recent_posts_number = 3
+
   author = "CRPG Team"
   
 # Menu configuration

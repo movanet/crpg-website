@@ -1,0 +1,284 @@
+/* CRPG Custom Styles */
+:root {
+  /* Color Palette */
+  --primary-blue: #003366;
+  --secondary-teal: #0088CC;
+  --accent-gold: #FFB300;
+  --text-dark: #2C3E50;
+  --text-light: #6C757D;
+  --bg-light: #F8F9FA;
+  --bg-white: #FFFFFF;
+  --border-light: #E9ECEF;
+  
+  /* Typography */
+  --font-serif: 'Merriweather', 'Georgia', serif;
+  --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 4rem;
+}
+
+/* Override Ananke Theme */
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--primary-blue);
+  line-height: 1.3;
+  margin-bottom: var(--space-md);
+}
+
+/* Navigation Customization */
+.bg-black {
+  background-color: var(--primary-blue) !important;
+}
+
+.site-header {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+  padding: var(--space-xxl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--primary-blue);
+}
+
+.hero-tagline {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: var(--space-lg);
+  font-weight: 300;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: var(--secondary-teal);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #006699;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+/* Section Styles */
+.section {
+  padding: var(--space-xxl) 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: var(--space-xl);
+  color: var(--primary-blue);
+}
+
+/* Research Cards */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.research-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.research-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: var(--bg-light);
+}
+
+.research-card-content {
+  padding: var(--space-md);
+}
+
+.research-card-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--primary-blue);
+}
+
+.research-card-summary {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: var(--space-sm);
+}
+
+.research-card-meta {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Focus Areas */
+.focus-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.focus-area-card {
+  background: white;
+  padding: var(--space-lg);
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.focus-area-card:hover {
+  border-color: var(--secondary-teal);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,136,204,0.15);
+}
+
+.focus-area-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto var(--space-md);
+  background-color: var(--secondary-teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.focus-area-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--primary-blue);
+}
+
+.focus-area-description {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* Partners Section */
+.partners-section {
+  background-color: var(--bg-light);
+}
+
+.partners-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  padding: var(--space-lg);
+}
+
+.partner-logo {
+  height: 60px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Footer Enhancement */
+.site-footer {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: var(--space-xl) 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-tagline {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .research-grid,
+  .focus-areas-grid {
+    grid-template-columns: 1fr;
+  }
+}

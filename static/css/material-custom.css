@@ -1,0 +1,309 @@
+/* Material Design Custom Styles for CRPG */
+:root {
+  /* Light Theme Colors */
+  --md-sys-color-primary: #1976D2;
+  --md-sys-color-primary-container: #BBDEFB;
+  --md-sys-color-secondary: #00ACC1;
+  --md-sys-color-secondary-container: #B2EBF2;
+  --md-sys-color-tertiary: #FFA726;
+  --md-sys-color-surface: #FFFFFF;
+  --md-sys-color-surface-variant: #F5F5F5;
+  --md-sys-color-background: #FAFAFA;
+  --md-sys-color-error: #D32F2F;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-on-surface: #212121;
+  --md-sys-color-on-background: #212121;
+  --md-sys-color-outline: #E0E0E0;
+  
+  /* Typography */
+  --md-sys-typescale-display-large: 3.5rem;
+  --md-sys-typescale-headline-large: 2.5rem;
+  --md-sys-typescale-headline-medium: 2rem;
+  --md-sys-typescale-title-large: 1.5rem;
+  --md-sys-typescale-body-large: 1.125rem;
+  
+  /* Elevation */
+  --md-sys-elevation-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --md-sys-elevation-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  --md-sys-elevation-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  
+  /* Spacing */
+  --md-spacing-xs: 4px;
+  --md-spacing-sm: 8px;
+  --md-spacing-md: 16px;
+  --md-spacing-lg: 24px;
+  --md-spacing-xl: 32px;
+  --md-spacing-xxl: 48px;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --md-sys-color-primary: #64B5F6;
+  --md-sys-color-primary-container: #0D47A1;
+  --md-sys-color-secondary: #4DD0E1;
+  --md-sys-color-secondary-container: #00838F;
+  --md-sys-color-tertiary: #FFB74D;
+  --md-sys-color-surface: #1E1E1E;
+  --md-sys-color-surface-variant: #2C2C2C;
+  --md-sys-color-background: #121212;
+  --md-sys-color-error: #EF5350;
+  --md-sys-color-on-primary: #003C8F;
+  --md-sys-color-on-surface: #E0E0E0;
+  --md-sys-color-on-background: #E0E0E0;
+  --md-sys-color-outline: #424242;
+}
+
+/* Base Styles */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: 'Roboto', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: var(--md-spacing-md);
+  right: var(--md-spacing-md);
+  z-index: 1000;
+  background-color: var(--md-sys-color-surface);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--md-sys-elevation-2);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  box-shadow: var(--md-sys-elevation-3);
+  transform: scale(1.05);
+}
+
+.theme-toggle svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--md-sys-color-on-surface);
+}
+
+/* Material Hero Section */
+.md-hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--md-sys-color-primary) 0%, var(--md-sys-color-secondary) 100%);
+}
+
+.md-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+}
+
+.md-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: var(--md-spacing-xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.md-hero-title {
+  font-size: var(--md-sys-typescale-display-large);
+  font-weight: 300;
+  color: white;
+  margin-bottom: var(--md-spacing-lg);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  letter-spacing: -0.5px;
+}
+
+.md-hero-subtitle {
+  font-size: var(--md-sys-typescale-title-large);
+  font-weight: 300;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: var(--md-spacing-xl);
+  line-height: 1.8;
+}
+
+/* Material Buttons */
+.md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  height: 48px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin: var(--md-spacing-sm);
+}
+
+.md-button-filled {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  box-shadow: var(--md-sys-elevation-1);
+}
+
+.md-button-filled:hover {
+  box-shadow: var(--md-sys-elevation-2);
+  transform: translateY(-2px);
+}
+
+.md-button-outlined {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.md-button-outlined:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Material Cards */
+.md-card {
+  background-color: var(--md-sys-color-surface);
+  border-radius: 16px;
+  box-shadow: var(--md-sys-elevation-1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.md-card:hover {
+  box-shadow: var(--md-sys-elevation-2);
+  transform: translateY(-4px);
+}
+
+.md-card-media {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: linear-gradient(135deg, var(--md-sys-color-primary-container) 0%, var(--md-sys-color-secondary-container) 100%);
+}
+
+.md-card-content {
+  padding: var(--md-spacing-lg);
+}
+
+.md-card-title {
+  font-size: var(--md-sys-typescale-headline-medium);
+  font-weight: 400;
+  color: var(--md-sys-color-on-surface);
+  margin-bottom: var(--md-spacing-sm);
+}
+
+.md-card-description {
+  color: var(--md-sys-color-on-surface);
+  opacity: 0.7;
+  margin-bottom: var(--md-spacing-md);
+}
+
+/* Material Navigation */
+.md-nav {
+  background-color: var(--md-sys-color-surface);
+  box-shadow: var(--md-sys-elevation-1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.md-nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--md-spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.md-nav-brand {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface);
+  text-decoration: none;
+}
+
+.md-nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--md-spacing-sm);
+}
+
+.md-nav-item {
+  padding: var(--md-spacing-sm) var(--md-spacing-md);
+  color: var(--md-sys-color-on-surface);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.md-nav-item:hover {
+  background-color: var(--md-sys-color-primary-container);
+}
+
+/* Material Chips for Focus Areas */
+.md-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--md-spacing-sm) var(--md-spacing-md);
+  background-color: var(--md-sys-color-surface-variant);
+  border-radius: 16px;
+  margin: var(--md-spacing-xs);
+  transition: all 0.3s ease;
+}
+
+.md-chip:hover {
+  background-color: var(--md-sys-color-primary-container);
+  transform: scale(1.05);
+}
+
+.md-chip-icon {
+  font-size: 1.25rem;
+  margin-right: var(--md-spacing-sm);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .md-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .md-hero-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .md-nav-menu {
+    display: none;
+  }
+  
+  .theme-toggle {
+    top: 76px;
+  }
+}

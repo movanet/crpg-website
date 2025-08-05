@@ -1,19 +1,32 @@
 {{ define "main" }}
 
-<!-- Hero Section -->
-<section class="hero-section">
-  <div class="mw8 center ph3">
-    <div class="hero-content">
-      <h1 class="hero-title">{{ .Site.Title }}</h1>
-      <p class="hero-tagline">Advancing sustainable development through rigorous research and evidence-based policy recommendations</p>
-      <div class="hero-buttons">
-        <a href="/research/" class="btn btn-primary">Latest Research</a>
-        <a href="/publications/" class="btn btn-secondary">All Publications</a>
-        <a href="/about/" class="btn btn-secondary">About CRPG</a>
-      </div>
+<!-- Material Design Hero Section -->
+<section class="md-hero">
+  <div class="md-hero-content">
+    <h1 class="md-hero-title">{{ .Site.Title }}</h1>
+    <p class="md-hero-subtitle">Advancing sustainable development through rigorous research and evidence-based policy recommendations</p>
+    <div class="hero-buttons">
+      <a href="/research/" class="md-button md-button-filled">Explore Research</a>
+      <a href="/publications/" class="md-button md-button-outlined">View Publications</a>
+      <a href="/about/" class="md-button md-button-outlined">About CRPG</a>
     </div>
   </div>
 </section>
+
+<!-- Navigation (Material Design) -->
+<nav class="md-nav">
+  <div class="md-nav-content">
+    <a href="/" class="md-nav-brand">CRPG</a>
+    <ul class="md-nav-menu">
+      <li><a href="/profile/" class="md-nav-item">Profile</a></li>
+      <li><a href="/program/" class="md-nav-item">Programs</a></li>
+      <li><a href="/research/" class="md-nav-item">Research</a></li>
+      <li><a href="/publications/" class="md-nav-item">Publications</a></li>
+      <li><a href="/events/" class="md-nav-item">Events</a></li>
+      <li><a href="/gallery/" class="md-nav-item">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
 
 <!-- Latest Research Section -->
 <section class="section">
@@ -21,17 +34,17 @@
     <h2 class="section-title">Latest Research</h2>
     <div class="research-grid">
       {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
-      <article class="research-card">
+      <article class="md-card">
         {{ if .Params.image }}
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="research-card-image">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="md-card-media">
         {{ else }}
-        <div class="research-card-image" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);"></div>
+        <div class="md-card-media"></div>
         {{ end }}
-        <div class="research-card-content">
-          <h3 class="research-card-title">
+        <div class="md-card-content">
+          <h3 class="md-card-title">
             <a href="{{ .RelPermalink }}" class="link dim black">{{ .Title }}</a>
           </h3>
-          <p class="research-card-summary">
+          <p class="md-card-description">
             {{ .Summary | truncate 150 }}
           </p>
           <div class="research-card-meta">
@@ -43,41 +56,72 @@
       {{ end }}
     </div>
     <div class="tc mt4">
-      <a href="/posts/" class="btn btn-primary">View All Research</a>
+      <a href="/posts/" class="md-button md-button-filled">View All Research</a>
     </div>
   </div>
 </section>
 
-<!-- Focus Areas Section -->
+<!-- Focus Areas Section with Material Chips -->
 <section class="section bg-light">
   <div class="mw8 center ph3">
     <h2 class="section-title">Our Focus Areas</h2>
-    <div class="focus-areas-grid">
-      <div class="focus-area-card">
-        <div class="focus-area-icon">⚖️</div>
-        <h3 class="focus-area-title">Constitutional Law & Governance</h3>
-        <p class="focus-area-description">Strengthening democratic institutions and governance frameworks for sustainable development</p>
+    <div class="tc">
+      <div class="md-chip">
+        <span class="md-chip-icon">⚖️</span>
+        <span>Constitutional Law & Governance</span>
       </div>
-      <div class="focus-area-card">
-        <div class="focus-area-icon">🌿</div>
-        <h3 class="focus-area-title">Environmental Policy</h3>
-        <p class="focus-area-description">Climate change adaptation and mitigation strategies for Indonesia</p>
+      <div class="md-chip">
+        <span class="md-chip-icon">🌿</span>
+        <span>Environmental Policy</span>
       </div>
-      <div class="focus-area-card">
-        <div class="focus-area-icon">💧</div>
-        <h3 class="focus-area-title">Water Resources Management</h3>
-        <p class="focus-area-description">Sustainable water governance and policy solutions for communities</p>
+      <div class="md-chip">
+        <span class="md-chip-icon">💧</span>
+        <span>Water Resources Management</span>
       </div>
-      <div class="focus-area-card">
-        <div class="focus-area-icon">📋</div>
-        <h3 class="focus-area-title">Regulatory Analysis</h3>
-        <p class="focus-area-description">Evidence-based regulatory frameworks for development</p>
+      <div class="md-chip">
+        <span class="md-chip-icon">📋</span>
+        <span>Regulatory Analysis</span>
       </div>
-      <div class="focus-area-card">
-        <div class="focus-area-icon">🤝</div>
-        <h3 class="focus-area-title">Multi-stakeholder Engagement</h3>
-        <p class="focus-area-description">Facilitating inclusive policy development processes</p>
+      <div class="md-chip">
+        <span class="md-chip-icon">🤝</span>
+        <span>Multi-stakeholder Engagement</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Programs Section -->
+<section class="section">
+  <div class="mw8 center ph3">
+    <h2 class="section-title">Active Programs</h2>
+    <div class="research-grid">
+      <article class="md-card">
+        <div class="md-card-content">
+          <h3 class="md-card-title">SWA-MAM Catalytic Program</h3>
+          <p class="md-card-description">
+            Supporting water, sanitation and hygiene initiatives through multi-stakeholder collaboration and evidence-based policy development.
+          </p>
+          <a href="/swa-mam-catalytic-program/" class="link dim blue">Learn More →</a>
+        </div>
+      </article>
+      <article class="md-card">
+        <div class="md-card-content">
+          <h3 class="md-card-title">EHRDD Initiative</h3>
+          <p class="md-card-description">
+            Environmental Human Rights Due Diligence program promoting sustainable business practices and environmental protection.
+          </p>
+          <a href="/ehrdd/" class="link dim blue">Learn More →</a>
+        </div>
+      </article>
+      <article class="md-card">
+        <div class="md-card-content">
+          <h3 class="md-card-title">KONEKSI Workshops</h3>
+          <p class="md-card-description">
+            Connecting stakeholders through knowledge exchange workshops on critical policy issues and sustainable development.
+          </p>
+          <a href="/koneksi/" class="link dim blue">Learn More →</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -104,7 +148,7 @@
     </p>
     <form class="measure center">
       <input type="email" placeholder="Enter your email" class="input-reset ba b--black-20 pa3 mb3 db w-100">
-      <button type="submit" class="btn btn-primary db w-100">Subscribe</button>
+      <button type="submit" class="md-button md-button-filled db w-100">Subscribe</button>
     </form>
   </div>
 </section>

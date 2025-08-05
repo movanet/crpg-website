@@ -1,28 +1,71 @@
 ---
-title: "Center for Regulation, Policy and Governance"
-description: "Leading think tank focused on sustainable development through evidence-based policy research"
+title: "CRPG: Center for Regulation Policy and Governance"
+description: "We are a group of scholars passionate to make a difference through action-research. We facilitate your need for research-based decision making, consultancies and social responsibility, and aim to make impact on people's life."
+type: "page"
+layout: "homepage"
 ---
 
-# Welcome to CRPG
+# CRPG: Center for Regulation Policy and Governance
 
-The Center for Regulation, Policy and Governance (CRPG) is a leading think tank dedicated to advancing sustainable development through rigorous research and evidence-based policy recommendations.
+We are a group of scholars passionate to make a difference through action-research.
 
-## Our Focus Areas
+We facilitate your need for research-based decision making, consultancies and social responsibility, and aim to make impact on people's life.
 
-- **Constitutional Law & Governance** - Strengthening democratic institutions and governance frameworks
-- **Environmental Policy** - Climate change adaptation and mitigation strategies
-- **Water Resources Management** - Sustainable water governance and policy solutions
-- **Regulatory Analysis** - Evidence-based regulatory frameworks for development
-- **Multi-stakeholder Engagement** - Facilitating inclusive policy development processes
+---
 
-## Recent Publications
+The Center for Regulation, Policy and Governance (CRPG) is an Association with Legal Entity (*Perkumpulan Berbadan Hukum*) established through the approval of the Minister of Justice and Human Rights No. AHU-0027408.AH.01.07.TAHUN 2016.
 
-Visit our [Publications](/publications/) section to access our latest research papers, policy briefs, and analysis.
+## Our Work
 
-## Our Team
+### Research
+All Research completed by CRPG since 2013.
 
-CRPG brings together leading researchers and policy experts. Learn more about our [Team](/team/).
+### Program
+To enhance the capacity of government reformers and civil society activists in both member and non-OGP member countries in Asia Pacific through peer to peer learning exchange.
 
-## Partner Organizations
+### Events
+Events that held or organized by CRPG.
 
-We collaborate with national and international organizations to advance sustainable development goals. View our [Partners](/partners/).
+## Clients and Partners
+
+CRPG has worked with various organizations including:
+- World Resources Institute (WRI)
+- Sanitation and Water for All (SWA)
+- Hivos
+- UNICEF
+- University of Dundee
+- AusAID
+- Bappenas
+- Jejaring AMPL
+- WaterLex
+- SMEC
+- UNESCO Dundee
+- UNIDO
+- Engineers Without Borders
+- Ministry of Environment and Forestry (KLHK)
+- Open Government Partnership (OGP)
+- Petrolab
+- Biodiversity Research Institute
+- Ministry of Foreign Affairs (Kemenlu)
+- Ecoverse
+- SNV
+- Global Water Partnership Southeast Asia (GWP-SEA)
+- Koneksi
+- Hukum Online
+- Nexus
+- International POPs Elimination Network (IPEN)
+
+## Contact Information
+
+**Address:**
+Fakultas Hukum Universitas Ibn Khaldun Bogor  
+Jl. KH Sholeh Iskandar Km. 2,  
+Bogor 16162
+
+**Phone:** +62 251 8316 452  
+**Email:** info@crpg.info  
+**Social Media:**
+- Twitter: [@crpginfo](https://twitter.com/crpginfo)
+- Instagram: [@crpginfo](https://www.instagram.com/crpginfo/)
+
+*An Independent Think Tank Based in Bogor, Indonesia*

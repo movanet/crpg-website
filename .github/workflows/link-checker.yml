@@ -1,0 +1,58 @@
+name: Link Checker
+
+on:
+  schedule:
+    # Run weekly on Mondays at 9 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.140.2'
+        extended: true
+
+    - name: Build Hugo site
+      run: hugo --gc --minify --baseURL="https://crpgweb.netlify.app"
+
+    - name: Check internal links
+      uses: lycheeverse/lychee-action@v2.0.2
+      with:
+        args: --verbose --no-progress --accept=200,203,429 'public/**/*.html'
+        fail: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Check external links (non-blocking)
+      uses: lycheeverse/lychee-action@v2.0.2
+      with:
+        args: --verbose --no-progress --accept=200,203,429 --exclude-mail --exclude-private 'public/**/*.html'
+        fail: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      continue-on-error: true
+
+    - name: Create link check report
+      if: failure()
+      run: |
+        echo "## Link Check Results" >> $GITHUB_STEP_SUMMARY
+        echo "❌ Some links are broken. Please check the job logs for details." >> $GITHUB_STEP_SUMMARY
+
+    - name: Create success report
+      if: success()
+      run: |
+        echo "## Link Check Results" >> $GITHUB_STEP_SUMMARY
+        echo "✅ All internal links are working correctly." >> $GITHUB_STEP_SUMMARY

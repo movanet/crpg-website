@@ -1,0 +1,84 @@
+name: Accessibility Testing
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    # Run weekly on Wednesdays at 10 AM UTC
+    - cron: '0 10 * * 3'
+
+jobs:
+  accessibility-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.140.2'
+        extended: true
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Build Hugo site
+      run: hugo --gc --minify --baseURL="http://localhost:1313"
+
+    - name: Install accessibility testing tools
+      run: |
+        npm install -g @axe-core/cli
+        npm install -g pa11y-ci
+
+    - name: Start local server
+      run: |
+        cd public
+        python3 -m http.server 8080 &
+        sleep 5
+      
+    - name: Run axe-core accessibility tests
+      run: |
+        axe http://localhost:8080 \
+          --tags wcag2a,wcag2aa,wcag21aa \
+          --reporter spec \
+          --exit \
+          --output axe-results.json
+      continue-on-error: true
+
+    - name: Run pa11y accessibility tests
+      run: |
+        echo '{"urls": ["http://localhost:8080"], "standard": "WCAG2AA", "timeout": 30000, "wait": 1000}' > pa11y-config.json
+        pa11y-ci --config pa11y-config.json --reporter cli
+      continue-on-error: true
+
+    - name: Upload accessibility reports
+      uses: actions/upload-artifact@v4
+      with:
+        name: accessibility-reports-${{ github.sha }}
+        path: |
+          axe-results.json
+          pa11y-config.json
+        retention-days: 30
+      if: always()
+
+    - name: Create accessibility summary
+      if: always()
+      run: |
+        echo "## Accessibility Test Results" >> $GITHUB_STEP_SUMMARY
+        echo "📊 Accessibility tests completed." >> $GITHUB_STEP_SUMMARY
+        echo "Check the uploaded artifacts for detailed reports." >> $GITHUB_STEP_SUMMARY
+        if [ -f axe-results.json ]; then
+          echo "### Axe-core Results" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          cat axe-results.json | jq '.violations | length' >> $GITHUB_STEP_SUMMARY || echo "Results available in artifacts" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+        fi

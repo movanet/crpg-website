@@ -1,0 +1,60 @@
+name: Hugo Build Test
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.140.2'
+        extended: true
+
+    - name: Setup Node.js (if needed for asset processing)
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+      if: hashFiles('package.json') != ''
+
+    - name: Install npm dependencies
+      run: npm ci
+      if: hashFiles('package.json') != ''
+
+    - name: Build Hugo site
+      run: hugo --gc --minify --baseURL="https://example.com"
+
+    - name: Check for build artifacts
+      run: |
+        ls -la public/
+        if [ ! -f public/index.html ]; then
+          echo "Error: index.html not found in public directory"
+          exit 1
+        fi
+
+    - name: Validate HTML
+      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      with:
+        root: public/
+        css: true
+        fail_on_warnings: false
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: hugo-build-${{ github.sha }}
+        path: public/
+        retention-days: 7

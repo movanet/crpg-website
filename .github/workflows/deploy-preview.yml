@@ -1,0 +1,46 @@
+name: Deploy Preview
+
+on:
+  pull_request:
+    branches: [ main ]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.140.2'
+        extended: true
+
+    - name: Build Hugo site for preview
+      run: hugo --gc --minify --baseURL="https://deploy-preview-${{ github.event.number }}--crpgweb.netlify.app"
+
+    - name: Deploy to Netlify (Preview)
+      uses: nwtgck/actions-netlify@v3.0
+      with:
+        publish-dir: './public'
+        production-branch: main
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        deploy-message: "Deploy preview for PR #${{ github.event.number }}"
+        enable-pull-request-comment: true
+        enable-commit-comment: false
+        overwrites-pull-request-comment: true
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+    - name: Run quick accessibility check on preview
+      run: |
+        sleep 30  # Wait for deployment
+        npx pa11y "https://deploy-preview-${{ github.event.number }}--crpgweb.netlify.app" --standard WCAG2AA || echo "Accessibility check completed with warnings"
+      continue-on-error: true

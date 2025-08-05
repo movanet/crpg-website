@@ -1,4 +1,5 @@
 {{ define "main" }}
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
 
 <!-- Material Design Hero Section -->
 <section class="md-hero">
@@ -14,7 +15,7 @@
 </section>
 
 <!-- Navigation (Material Design) -->
-<nav class="md-nav">
+<nav class="md-nav" role="navigation" aria-label="Main navigation">
   <div class="md-nav-content">
     <a href="/" class="md-nav-brand" style="display: flex; align-items: center;">
       <img src="{{ "images/crpg-logo.png" | relURL }}" alt="CRPG Logo" class="site-logo">
@@ -27,11 +28,40 @@
       <li><a href="/events/" class="md-nav-item">Events</a></li>
       <li><a href="/gallery/" class="md-nav-item">Gallery</a></li>
     </ul>
+    <div class="nav-actions">
+      {{ partial "search.html" . }}
+    </div>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </nav>
 
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu-panel">
+  <div class="mobile-menu-header">
+    <img src="{{ "images/crpg-logo.png" | relURL }}" alt="CRPG Logo" class="mobile-menu-logo">
+  </div>
+  <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/profile/">Profile</a></li>
+      <li><a href="/program/">Programs</a></li>
+      <li><a href="/research/">Research</a></li>
+      <li><a href="/publications/">Publications</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+    </ul>
+  </nav>
+</div>
+
 <!-- Latest Research Section -->
-<section class="section">
+<main id="main-content">
+<section class="section" aria-labelledby="research-heading">
   <div class="mw8 center ph3">
     <h2 class="section-title">Latest Research</h2>
     <div class="research-grid">
@@ -154,5 +184,6 @@
     </form>
   </div>
 </section>
+</main>
 
 {{ end }}

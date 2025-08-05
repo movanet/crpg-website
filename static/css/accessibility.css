@@ -1,0 +1,247 @@
+/* Accessibility Enhancements */
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 0 0 8px 0;
+  z-index: 10000;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+  outline: 3px solid var(--md-sys-color-tertiary);
+  outline-offset: 2px;
+}
+
+/* Focus indicators */
+:focus {
+  outline: 3px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* Remove outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Focus visible for keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --md-sys-color-primary: #0000FF;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-surface: #FFFFFF;
+    --md-sys-color-on-surface: #000000;
+    --md-sys-color-outline: #000000;
+  }
+  
+  * {
+    border-width: 2px !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focusable screen reader content */
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Accessible color contrast */
+.high-contrast {
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  border: 2px solid var(--md-sys-color-outline);
+}
+
+/* Touch target sizing */
+button,
+a,
+input,
+select,
+textarea {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Inline links exception */
+p a,
+li a,
+td a {
+  min-height: auto;
+  min-width: auto;
+}
+
+/* Form accessibility */
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: var(--font-weight-medium);
+}
+
+input:required,
+textarea:required,
+select:required {
+  border-color: var(--md-sys-color-primary);
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border-color: var(--md-sys-color-error);
+}
+
+/* Error messages */
+.error-message {
+  color: var(--md-sys-color-error);
+  font-size: var(--font-size-sm);
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.error-message::before {
+  content: "⚠️";
+  font-size: 1.2em;
+}
+
+/* Success messages */
+.success-message {
+  color: #2E7D32;
+  font-size: var(--font-size-sm);
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.success-message::before {
+  content: "✓";
+  font-size: 1.2em;
+}
+
+/* Loading states */
+.loading {
+  position: relative;
+  color: transparent;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid var(--md-sys-color-primary);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Accessible tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+table caption {
+  text-align: left;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 0.5rem;
+}
+
+th {
+  background-color: var(--md-sys-color-surface-variant);
+  font-weight: var(--font-weight-semibold);
+  text-align: left;
+  padding: 0.75rem;
+}
+
+td {
+  padding: 0.75rem;
+  border-top: 1px solid var(--md-sys-color-outline);
+}
+
+/* Landmark roles */
+[role="banner"],
+[role="navigation"],
+[role="main"],
+[role="complementary"],
+[role="contentinfo"] {
+  /* Ensure landmarks are discoverable */
+  display: block;
+}
+
+/* Image accessibility */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img[alt=""] {
+  /* Decorative images */
+  role: presentation;
+}
+
+/* Video accessibility */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure captions are visible */
+video::cue {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1.1em;
+}

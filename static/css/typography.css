@@ -1,0 +1,225 @@
+/* Optimized Typography System */
+:root {
+  /* Type Scale - Major Third (1.25) */
+  --font-size-xs: 0.8rem;      /* 12.8px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-md: 1.125rem;    /* 18px */
+  --font-size-lg: 1.25rem;     /* 20px */
+  --font-size-xl: 1.5rem;      /* 24px */
+  --font-size-2xl: 1.875rem;   /* 30px */
+  --font-size-3xl: 2.25rem;    /* 36px */
+  --font-size-4xl: 2.8125rem;  /* 45px */
+  --font-size-5xl: 3.5rem;     /* 56px */
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.4;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+  --line-height-loose: 2;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Base Typography */
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  color: var(--md-sys-color-on-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+h6 {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Paragraphs */
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  max-width: 65ch; /* Optimal reading length */
+}
+
+/* Lead Paragraph */
+.lead {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  font-weight: var(--font-weight-light);
+}
+
+/* Links */
+a {
+  color: var(--md-sys-color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--md-sys-color-primary-container);
+  text-decoration-thickness: 2px;
+}
+
+a:focus {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: 2px;
+}
+
+/* Lists */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: var(--line-height-normal);
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--md-sys-color-primary);
+  background-color: var(--md-sys-color-surface-variant);
+  font-style: italic;
+}
+
+/* Code */
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
+  font-size: 0.875em;
+  padding: 0.125rem 0.25rem;
+  background-color: var(--md-sys-color-surface-variant);
+  border-radius: 4px;
+}
+
+pre {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: var(--md-sys-color-surface-variant);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Small Text */
+small {
+  font-size: var(--font-size-sm);
+}
+
+/* Strong */
+strong, b {
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Emphasis */
+em, i {
+  font-style: italic;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  h3 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  h1 { font-size: 24pt; }
+  h2 { font-size: 20pt; }
+  h3 { font-size: 16pt; }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+}

@@ -114,3 +114,57 @@ body {
   background-color: var(--md-sys-color-surface);
   border: 2px solid var(--md-sys-color-outline);
 }
+
+/* Fix Ananke theme overrides for proper dark mode */
+[data-theme="dark"] .bg-white {
+  background-color: var(--md-sys-color-background) !important;
+}
+
+[data-theme="dark"] .bg-near-white {
+  background-color: var(--md-sys-color-surface) !important;
+}
+
+[data-theme="dark"] .black,
+[data-theme="dark"] .dark-gray,
+[data-theme="dark"] .mid-gray {
+  color: var(--md-sys-color-on-surface) !important;
+}
+
+[data-theme="dark"] .link {
+  color: var(--md-sys-color-secondary) !important;
+}
+
+[data-theme="dark"] .link:hover {
+  color: var(--md-sys-color-primary) !important;
+}
+
+/* Fix research card colors in dark mode */
+[data-theme="dark"] .research-card {
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+}
+
+[data-theme="dark"] .research-card-title {
+  color: var(--md-sys-color-on-surface);
+}
+
+[data-theme="dark"] .research-card-summary,
+[data-theme="dark"] .research-card-meta {
+  color: var(--md-sys-color-on-surface);
+  opacity: 0.8;
+}
+
+/* Fix focus area cards in dark mode */
+[data-theme="dark"] .focus-area-card {
+  background-color: var(--md-sys-color-surface);
+  border-color: var(--md-sys-color-outline);
+}
+
+[data-theme="dark"] .focus-area-title {
+  color: var(--md-sys-color-on-surface);
+}
+
+[data-theme="dark"] .focus-area-description {
+  color: var(--md-sys-color-on-surface);
+  opacity: 0.8;
+}

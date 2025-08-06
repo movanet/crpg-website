@@ -258,6 +258,47 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--space-xl) 0;
 }
 
+/* Custom Footer Contact Styles */
+footer {
+  background-color: #2c3e50 !important;
+}
+
+footer h3 {
+  color: white !important;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #87ceeb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+footer .bt {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive footer adjustments */
+@media (max-width: 768px) {
+  footer .dtc-ns {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 2rem;
+  }
+  
+  footer .dtc-ns:last-child {
+    margin-bottom: 0;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {

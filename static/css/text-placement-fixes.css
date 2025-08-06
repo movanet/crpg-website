@@ -9,7 +9,7 @@
 .site-logo,
 .md-nav-brand img,
 .mobile-menu-logo {
-  height: 45px !important;
+  height: 58.5px !important;
   width: auto !important;
   max-width: 200px !important;
   object-fit: contain;
@@ -25,7 +25,7 @@
 
 /* Mobile menu logo specific sizing */
 .mobile-menu-logo {
-  height: 40px !important;
+  height: 52px !important;
   max-width: 180px !important;
 }
 
@@ -404,7 +404,7 @@
   
   .site-logo,
   .md-nav-brand img {
-    height: 36px !important;
+    height: 46.8px !important;
     max-width: 160px !important;
   }
   
@@ -457,7 +457,7 @@
   }
   
   .partner-logo {
-    height: 45px !important;
+    height: 58.5px !important;
     max-width: 120px !important;
   }
   
@@ -480,7 +480,7 @@
   /* Extra small mobile adjustments */
   .site-logo,
   .md-nav-brand img {
-    height: 32px !important;
+    height: 41.6px !important;
     max-width: 140px !important;
   }
   
@@ -501,7 +501,7 @@
   }
   
   .partner-logo {
-    height: 40px !important;
+    height: 52px !important;
     max-width: 100px !important;
   }
 }

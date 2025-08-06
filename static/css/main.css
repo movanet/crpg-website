@@ -6,10 +6,10 @@
 /* Material Design Custom Variables */
 :root {
   /* Light Theme Colors */
-  --md-sys-color-primary: #1976D2;
-  --md-sys-color-primary-container: #BBDEFB;
-  --md-sys-color-secondary: #00ACC1;
-  --md-sys-color-secondary-container: #B2EBF2;
+  --md-sys-color-primary: #E51D1D;
+  --md-sys-color-primary-container: #FFCDD2;
+  --md-sys-color-secondary: #F57C00;
+  --md-sys-color-secondary-container: #FFE0B2;
   --md-sys-color-tertiary: #FFA726;
   --md-sys-color-surface: #FFFFFF;
   --md-sys-color-surface-variant: #F5F5F5;
@@ -33,11 +33,11 @@
   --md-sys-elevation-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   
   /* CRPG Brand Colors */
-  --crpg-blue: #1976D2;
-  --crpg-dark-blue: #0D47A1;
-  --crpg-light-blue: #BBDEFB;
-  --crpg-green: #388E3C;
+  --crpg-red: #E51D1D;
+  --crpg-dark-red: #B71C1C;
+  --crpg-light-red: #FFCDD2;
   --crpg-orange: #F57C00;
+  --crpg-light-orange: #FFA726;
   --crpg-black: #212121;
   --crpg-white: #FFFFFF;
   --crpg-gray: #757575;
@@ -45,16 +45,16 @@
 
 /* Dark Theme */
 [data-theme="dark"] {
-  --md-sys-color-primary: #64B5F6;
-  --md-sys-color-primary-container: #0D47A1;
-  --md-sys-color-secondary: #4DD0E1;
-  --md-sys-color-secondary-container: #00838F;
+  --md-sys-color-primary: #EF5350;
+  --md-sys-color-primary-container: #B71C1C;
+  --md-sys-color-secondary: #FFB74D;
+  --md-sys-color-secondary-container: #E65100;
   --md-sys-color-tertiary: #FFB74D;
   --md-sys-color-surface: #1E1E1E;
   --md-sys-color-surface-variant: #2C2C2C;
   --md-sys-color-background: #121212;
   --md-sys-color-error: #EF5350;
-  --md-sys-color-on-primary: #003C8F;
+  --md-sys-color-on-primary: #FFFFFF;
   --md-sys-color-on-surface: #E0E0E0;
   --md-sys-color-on-background: #E0E0E0;
   --md-sys-color-outline: #424242;
@@ -115,22 +115,22 @@ p {
 
 /* Links */
 a {
-  color: #1565C0;
+  color: #D32F2F;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 [data-theme="dark"] a {
-  color: #64B5F6;
+  color: #EF5350;
 }
 
 a:hover {
-  color: #0D47A1;
+  color: #B71C1C;
   text-decoration: underline;
 }
 
 [data-theme="dark"] a:hover {
-  color: #90CAF9;
+  color: #FFCDD2;
 }
 
 /* Theme Toggle */
@@ -276,7 +276,7 @@ a:hover {
 }
 
 .md-button-filled {
-  background-color: #1976D2;
+  background-color: #E51D1D;
   color: white;
   box-shadow: var(--md-sys-elevation-1);
 }
@@ -352,7 +352,7 @@ a:hover {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #1976D2;
+  border-color: #E51D1D;
 }
 
 /* Mobile Menu */
@@ -629,10 +629,10 @@ img[loading="lazy"] {
 
 /* Focus styles */
 *:focus {
-  outline: 2px solid #1976D2;
+  outline: 2px solid #E51D1D;
   outline-offset: 2px;
 }
 
 [data-theme="dark"] *:focus {
-  outline-color: #64B5F6;
+  outline-color: #EF5350;
 }

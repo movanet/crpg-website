@@ -51,7 +51,7 @@ main article {
 .site-logo,
 .md-nav-brand img,
 .mobile-menu-logo {
-  height: 45px !important;
+  height: 58.5px !important;
   width: auto !important;
   max-width: 200px !important;
   object-fit: contain;
@@ -133,11 +133,11 @@ li {
 }
 
 .md-card-title a:hover {
-  color: #1976D2 !important;
+  color: #E51D1D !important;
 }
 
 [data-theme="dark"] .md-card-title a:hover {
-  color: #64B5F6 !important;
+  color: #EF5350 !important;
 }
 
 /* Fix card descriptions */
@@ -248,29 +248,29 @@ img[loading="lazy"] {
 
 /* Fix link contrast */
 a {
-  color: #1565C0 !important;
+  color: #D32F2F !important;
 }
 
 [data-theme="dark"] a {
-  color: #64B5F6 !important;
+  color: #EF5350 !important;
 }
 
 a:hover {
-  color: #0D47A1 !important;
+  color: #B71C1C !important;
 }
 
 [data-theme="dark"] a:hover {
-  color: #90CAF9 !important;
+  color: #FFCDD2 !important;
 }
 
 /* Fix button contrast */
 .md-button-filled {
-  background-color: #1976D2 !important;
+  background-color: #E51D1D !important;
   color: white !important;
 }
 
 [data-theme="dark"] .md-button-filled {
-  background-color: #64B5F6 !important;
+  background-color: #EF5350 !important;
   color: #121212 !important;
 }
 
@@ -311,11 +311,11 @@ input, textarea, select {
 
 /* Fix selection colors */
 ::selection {
-  background-color: #1976D2;
+  background-color: #E51D1D;
   color: white;
 }
 
 [data-theme="dark"] ::selection {
-  background-color: #64B5F6;
+  background-color: #EF5350;
   color: #121212;
 }

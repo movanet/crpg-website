@@ -6,11 +6,11 @@
 /* Material Design Custom Variables */
 :root {
   /* Light Theme Colors */
-  --md-sys-color-primary: #E51D1D;
+  --md-sys-color-primary: #E53935;
   --md-sys-color-primary-container: #FFCDD2;
-  --md-sys-color-secondary: #F57C00;
+  --md-sys-color-secondary: #FB8C00;
   --md-sys-color-secondary-container: #FFE0B2;
-  --md-sys-color-tertiary: #FFA726;
+  --md-sys-color-tertiary: #FFB300;
   --md-sys-color-surface: #FFFFFF;
   --md-sys-color-surface-variant: #F5F5F5;
   --md-sys-color-background: #FAFAFA;
@@ -33,10 +33,10 @@
   --md-sys-elevation-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   
   /* CRPG Brand Colors */
-  --crpg-red: #E51D1D;
+  --crpg-red: #E53935;
   --crpg-dark-red: #B71C1C;
   --crpg-light-red: #FFCDD2;
-  --crpg-orange: #F57C00;
+  --crpg-orange: #FB8C00;
   --crpg-light-orange: #FFA726;
   --crpg-black: #212121;
   --crpg-white: #FFFFFF;
@@ -47,9 +47,9 @@
 [data-theme="dark"] {
   --md-sys-color-primary: #EF5350;
   --md-sys-color-primary-container: #B71C1C;
-  --md-sys-color-secondary: #FFB74D;
+  --md-sys-color-secondary: #FF9800;
   --md-sys-color-secondary-container: #E65100;
-  --md-sys-color-tertiary: #FFB74D;
+  --md-sys-color-tertiary: #FFC107;
   --md-sys-color-surface: #1E1E1E;
   --md-sys-color-surface-variant: #2C2C2C;
   --md-sys-color-background: #121212;
@@ -276,7 +276,7 @@ a:hover {
 }
 
 .md-button-filled {
-  background-color: #E51D1D;
+  background-color: #E53935;
   color: white;
   box-shadow: var(--md-sys-elevation-1);
 }
@@ -352,7 +352,7 @@ a:hover {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #E51D1D;
+  border-color: #E53935;
 }
 
 /* Mobile Menu */
@@ -629,7 +629,7 @@ img[loading="lazy"] {
 
 /* Focus styles */
 *:focus {
-  outline: 2px solid #E51D1D;
+  outline: 2px solid #E53935;
   outline-offset: 2px;
 }
 

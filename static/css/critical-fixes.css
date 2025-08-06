@@ -133,7 +133,7 @@ li {
 }
 
 .md-card-title a:hover {
-  color: #E51D1D !important;
+  color: #E53935 !important;
 }
 
 [data-theme="dark"] .md-card-title a:hover {
@@ -265,7 +265,7 @@ a:hover {
 
 /* Fix button contrast */
 .md-button-filled {
-  background-color: #E51D1D !important;
+  background-color: #E53935 !important;
   color: white !important;
 }
 
@@ -311,7 +311,7 @@ input, textarea, select {
 
 /* Fix selection colors */
 ::selection {
-  background-color: #E51D1D;
+  background-color: #E53935;
   color: white;
 }
 

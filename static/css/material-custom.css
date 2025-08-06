@@ -1,11 +1,11 @@
 /* Material Design Custom Styles for CRPG */
 :root {
   /* Light Theme Colors */
-  --md-sys-color-primary: #E51D1D;
+  --md-sys-color-primary: #E53935;
   --md-sys-color-primary-container: #FFCDD2;
-  --md-sys-color-secondary: #F57C00;
+  --md-sys-color-secondary: #FB8C00;
   --md-sys-color-secondary-container: #FFE0B2;
-  --md-sys-color-tertiary: #FFA726;
+  --md-sys-color-tertiary: #FFB300;
   --md-sys-color-surface: #FFFFFF;
   --md-sys-color-surface-variant: #F5F5F5;
   --md-sys-color-background: #FAFAFA;
@@ -40,9 +40,9 @@
 [data-theme="dark"] {
   --md-sys-color-primary: #EF5350;
   --md-sys-color-primary-container: #B71C1C;
-  --md-sys-color-secondary: #FFB74D;
+  --md-sys-color-secondary: #FF9800;
   --md-sys-color-secondary-container: #E65100;
-  --md-sys-color-tertiary: #FFB74D;
+  --md-sys-color-tertiary: #FFC107;
   --md-sys-color-surface: #1E1E1E;
   --md-sys-color-surface-variant: #2C2C2C;
   --md-sys-color-background: #121212;

@@ -58,7 +58,7 @@ As a consultant for the International Budget Partnership, he reviews WASH and so
 
 - Al'Afghani, MM, Water Tenure in Indonesia, FAO, 2022
 - Abed Khalil and others, 'Indonesia Vision 2045: Toward Water Security (Policy Note)' (World Bank 2021)
-- Al'Afghani, M.M. and Qowamuna, N.A. [Regulasi dan Kebijakan Terkait dengan Penargetan Masyarakat B40](https://crpg.info/wp-content/uploads/2021/09/Regulasi-dan-Kebijakan-Terkait-dengan-Penargetan-Masyarakat-B40.pdf), 2021
+- Al'Afghani, M.M. and Qowamuna, N.A. [Regulasi dan Kebijakan Terkait dengan Penargetan Masyarakat B40]({{ "/publications/Regulasi-dan-Kebijakan-Terkait-dengan-Penargetan-Masyarakat-B40.pdf" | relURL }}), 2021
 
 ### Recent Op-eds (Selected)
 

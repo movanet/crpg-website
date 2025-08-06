@@ -1,4 +1,4 @@
-baseURL = "https://crpg.info/"  # Change to https://[YOUR-ORG].github.io/crpg-website/ for testing
+baseURL = "https://movanet.github.io/crpg-website/"
 languageCode = "en-us"
 title = "Center for Regulation, Policy and Governance"
 theme = "ananke"  # Temporary theme, will be replaced with Hugo Blox

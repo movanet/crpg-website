@@ -29,32 +29,32 @@ Our work focuses on the intersection of regulation, policy, and governance, with
 
 ## Management Directory
 
-- [Mohamad Mova Al'Afghani](/team/mohamad-mova/), Director
-- [Dyah Paramita](/team/dyah-paramita/), Secretary
-- [Aftaf Muhajir](/team/aftaf-muhajir/), Finance
+- [Mohamad Mova Al'Afghani]({{< relref "/team/mohamad-mova" >}}), Director
+- [Dyah Paramita]({{< relref "/team/dyah-paramita" >}}), Secretary
+- [Aftaf Muhajir]({{< relref "/team/aftaf-muhajir" >}}), Finance
 - Agus Setiawan, Finance & Administrator
 
 ## Main Researchers
 
-- [Mohamad Mova Al'Afghani](/team/mohamad-mova/), PhD
-- [Feril Hariati, M.Eng](/team/feril-hariat/)
-- [Dyah Paramita, LLM](/team/dyah-paramita/)
-- [M. Jibriel Avessina, MIP](/team/jibriel-avessina/)
-- [M. Aftaf Muhajir, S.Si](/team/aftaf-muhajir/)
-- [Nishrin A Qowamuna, LLM](/team/nishrin/)
+- [Mohamad Mova Al'Afghani]({{< relref "/team/mohamad-mova" >}}), PhD
+- [Feril Hariati, M.Eng]({{< relref "/team/feril-hariat" >}})
+- [Dyah Paramita, LLM]({{< relref "/team/dyah-paramita" >}})
+- [M. Jibriel Avessina, MIP]({{< relref "/team/jibriel-avessina" >}})
+- [M. Aftaf Muhajir, S.Si]({{< relref "/team/aftaf-muhajir" >}})
+- [Nishrin A Qowamuna, LLM]({{< relref "/team/nishrin" >}})
 
 ### Intern
 - Diva Livia
 
 ## Affiliated Researchers
 
-- [Dr. Budi Susetyo](/team/budi-susety/)
+- [Dr. Budi Susetyo]({{< relref "/team/budi-susety" >}})
 - Rahmat Bagja, LL.M
-- [Richo Wibowo, PhD](/team/richo-wibowo/)
-- [Muhammad Maulana, MPP](/team/muhammad-maulana/)
-- [Mulia Nurhasan, MSc](/team/mulia-nurhasan/)
-- [Lina Rospita, MSc](/team/lina-rospita/)
-- [Andi Septiari, MSc](/team/andi-mariyasa-septiari/)
+- [Richo Wibowo, PhD]({{< relref "/team/richo-wibowo" >}})
+- [Muhammad Maulana, MPP]({{< relref "/team/muhammad-maulana" >}})
+- [Mulia Nurhasan, MSc]({{< relref "/team/mulia-nurhasan" >}})
+- [Lina Rospita, MSc]({{< relref "/team/lina-rospita" >}})
+- [Andi Septiari, MSc]({{< relref "/team/andi-mariyasa-septiari" >}})
 - Azizah Nur Hapsari
 
 ## Corporate Portfolio

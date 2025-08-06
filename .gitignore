@@ -127,4 +127,6 @@ jspm_packages/
 .netlify/
 
 # Cached content
-cached/
+cached/venv/
+__pycache__/
+*.pyc

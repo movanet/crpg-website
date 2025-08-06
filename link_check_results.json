@@ -1,0 +1,1463 @@
+{
+  "base_url": "https://movanet.github.io/crpg-website/",
+  "pages_crawled": [
+    "https://movanet.github.io/",
+    "https://movanet.github.io/crpg-website/tags/legislation/index.xml",
+    "https://movanet.github.io/crpg-website/tags/climate-change/",
+    "https://movanet.github.io/crpg-website/tags/water-resources/",
+    "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+    "https://movanet.github.io/publications/",
+    "https://movanet.github.io/koneksi/",
+    "https://movanet.github.io/events/",
+    "https://movanet.github.io/gallery/",
+    "https://movanet.github.io/program/",
+    "https://movanet.github.io/crpg-website/tags/adaptation/index.xml",
+    "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+    "https://movanet.github.io/research/",
+    "mailto:mova@crpg.info",
+    "https://movanet.github.io/crpg-website/tags/climate-change/index.xml",
+    "https://movanet.github.io/crpg-website/tags/legislation/",
+    "https://movanet.github.io/crpg-website/wash/",
+    "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+    "https://movanet.github.io/crpg-website/tags/coastal-communities/index.xml",
+    "https://movanet.github.io/swa-mam-catalytic-program/",
+    "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+    "https://movanet.github.io/crpg-website/tags/water-law/",
+    "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+    "https://movanet.github.io/ehrdd/",
+    "https://movanet.github.io/crpg-website/tags/water-law/index.xml",
+    "https://movanet.github.io/crpg-website/tags/policy-brief/index.xml",
+    "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+    "https://movanet.github.io/crpg-website/",
+    "https://movanet.github.io/research/climate-adaptation-coastal/",
+    "https://movanet.github.io/crpg-website/tags/policy-brief/",
+    "https://movanet.github.io/posts/",
+    "https://movanet.github.io/profile/",
+    "https://movanet.github.io/crpg-website/tags/water-resources/index.xml",
+    "https://movanet.github.io/crpg-website/tags/water-governance/index.xml",
+    "https://movanet.github.io/crpg-website/tags/multi-stakeholder/index.xml",
+    "https://movanet.github.io/crpg-website/tags/water-governance/",
+    "https://movanet.github.io/crpg-website/tags/adaptation/",
+    "mailto:info@crpg.info",
+    "https://movanet.github.io/crpg-website/index.xml"
+  ],
+  "total_links": 83,
+  "dead_links_count": 21,
+  "dead_links": [
+    [
+      "https://fonts.googleapis.com",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+          "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+          "https://movanet.github.io/crpg-website/tags/water-governance/",
+          "https://movanet.github.io/crpg-website/tags/legislation/",
+          "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+          "https://movanet.github.io/crpg-website/tags/policy-brief/",
+          "https://movanet.github.io/crpg-website/tags/water-law/",
+          "https://movanet.github.io/crpg-website/tags/water-resources/",
+          "https://movanet.github.io/crpg-website/wash/",
+          "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+          "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+          "https://movanet.github.io/crpg-website/tags/climate-change/",
+          "https://movanet.github.io/crpg-website/tags/adaptation/",
+          "https://movanet.github.io/crpg-website/tags/coastal-communities/"
+        ],
+        "link_text": "",
+        "type": "href",
+        "tag": "link",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://fonts.gstatic.com",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+          "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+          "https://movanet.github.io/crpg-website/tags/water-governance/",
+          "https://movanet.github.io/crpg-website/tags/legislation/",
+          "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+          "https://movanet.github.io/crpg-website/tags/policy-brief/",
+          "https://movanet.github.io/crpg-website/tags/water-law/",
+          "https://movanet.github.io/crpg-website/tags/water-resources/",
+          "https://movanet.github.io/crpg-website/wash/",
+          "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+          "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+          "https://movanet.github.io/crpg-website/tags/climate-change/",
+          "https://movanet.github.io/crpg-website/tags/adaptation/",
+          "https://movanet.github.io/crpg-website/tags/coastal-communities/"
+        ],
+        "link_text": "",
+        "type": "href",
+        "tag": "link",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/research/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Explore Research",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/publications/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "View Publications",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/profile/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "About CRPG",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/program/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Programs",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/events/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Events",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/gallery/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Gallery",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "mailto:info@crpg.info",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+          "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+          "https://movanet.github.io/crpg-website/tags/water-governance/",
+          "https://movanet.github.io/crpg-website/tags/policy-brief/",
+          "https://movanet.github.io/crpg-website/tags/water-law/",
+          "https://movanet.github.io/crpg-website/wash/",
+          "https://movanet.github.io/crpg-website/tags/water-resources/",
+          "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+          "https://movanet.github.io/crpg-website/tags/legislation/",
+          "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+          "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+          "https://movanet.github.io/crpg-website/tags/climate-change/",
+          "https://movanet.github.io/crpg-website/tags/adaptation/",
+          "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+          "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "info@crpg.info",
+        "type": "href",
+        "tag": "a",
+        "status": null,
+        "error": "No connection adapters were found for 'mailto:info@crpg.info'"
+      }
+    ],
+    [
+      "https://twitter.com/crpginfo",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+          "https://movanet.github.io/crpg-website/tags/water-governance/",
+          "https://movanet.github.io/crpg-website/tags/policy-brief/",
+          "https://movanet.github.io/crpg-website/tags/water-law/",
+          "https://movanet.github.io/crpg-website/wash/",
+          "https://movanet.github.io/crpg-website/tags/water-resources/",
+          "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+          "https://movanet.github.io/crpg-website/tags/legislation/",
+          "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+          "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+          "https://movanet.github.io/crpg-website/tags/climate-change/",
+          "https://movanet.github.io/crpg-website/tags/adaptation/",
+          "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+          "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Twitter: @crpginfo",
+        "type": "href",
+        "tag": "a",
+        "status": 403,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/publications/water-law-position-paper.pdf",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/"
+        ],
+        "link_text": "Download Full Report (PDF)",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/publications/water-law-policy-brief-2024.pdf",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/"
+        ],
+        "link_text": "Download PDF",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "mailto:mova@crpg.info",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/"
+        ],
+        "link_text": "mova@crpg.info",
+        "type": "href",
+        "tag": "a",
+        "status": null,
+        "error": "No connection adapters were found for 'mailto:mova@crpg.info'"
+      }
+    ],
+    [
+      "https://movanet.github.io/research/climate-adaptation-coastal/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/"
+        ],
+        "link_text": "Access the Full Study",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/posts/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "View All Research",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/swa-mam-catalytic-program/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Learn More \u2192",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/ehrdd/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Learn More \u2192",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/koneksi/",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Learn More \u2192",
+        "type": "href",
+        "tag": "a",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/images/research-water-law.svg",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Multi-stakeholder Position Paper on Indonesia Water Law Draft",
+        "type": "image",
+        "tag": "img",
+        "status": 404,
+        "error": null
+      }
+    ],
+    [
+      "https://movanet.github.io/images/research-climate.svg",
+      {
+        "found_on": [
+          "https://movanet.github.io/crpg-website/"
+        ],
+        "link_text": "Climate Change Adaptation Strategies for Indonesian Coastal Communities",
+        "type": "image",
+        "tag": "img",
+        "status": 404,
+        "error": null
+      }
+    ]
+  ],
+  "all_links": {
+    "https://movanet.github.io/crpg-website/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://fonts.googleapis.com": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/"
+      ],
+      "link_text": "",
+      "type": "href",
+      "tag": "link",
+      "status": 404,
+      "error": null
+    },
+    "https://fonts.gstatic.com": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/"
+      ],
+      "link_text": "",
+      "type": "href",
+      "tag": "link",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/css/main.css": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/css/text-placement-fixes.css": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/favicon-32x32.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/"
+      ],
+      "link_text": "",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/favicon-16x16.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/"
+      ],
+      "link_text": "",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/research/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Explore Research",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/publications/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "View Publications",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/profile/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "About CRPG",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/program/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Programs",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/events/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Events",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/gallery/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Gallery",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Welcome to Our New Website",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "mailto:info@crpg.info": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "info@crpg.info",
+      "type": "href",
+      "tag": "a",
+      "status": null,
+      "error": "No connection adapters were found for 'mailto:info@crpg.info'"
+    },
+    "https://twitter.com/crpginfo": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Twitter: @crpginfo",
+      "type": "href",
+      "tag": "a",
+      "status": 403,
+      "error": null
+    },
+    "https://www.instagram.com/crpginfo/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Instagram: @crpginfo",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/js/main.js": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2025/08/welcome-to-our-new-website/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "JavaScript file",
+      "type": "script",
+      "tag": "script",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Multi-stakeholder Position Paper on Indonesia Water Law Draft",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/publications/water-law-position-paper.pdf": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/"
+      ],
+      "link_text": "Download Full Report (PDF)",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/water-governance/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/water-governance/"
+      ],
+      "link_text": "Water Governance",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/water-governance/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/water-governance/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/legislation/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/"
+      ],
+      "link_text": "Legislation",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/legislation/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/legislation/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-law/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/tags/legislation/",
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/"
+      ],
+      "link_text": "New Policy Brief: Recommendations for Indonesia's Water Resources Law",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/publications/water-law-policy-brief-2024.pdf": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/"
+      ],
+      "link_text": "Download PDF",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "mailto:mova@crpg.info": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/"
+      ],
+      "link_text": "mova@crpg.info",
+      "type": "href",
+      "tag": "a",
+      "status": null,
+      "error": "No connection adapters were found for 'mailto:mova@crpg.info'"
+    },
+    "https://movanet.github.io/crpg-website/tags/policy-brief/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/policy-brief/"
+      ],
+      "link_text": "Policy Brief",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/policy-brief/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/policy-brief/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/water-law/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-law/"
+      ],
+      "link_text": "Water Law",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/water-law/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/water-law/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/water-resources/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/news/2024-water-law-policy-brief/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/"
+      ],
+      "link_text": "Water-Resources",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/water-resources/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/water-resources/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/wash/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/water-resources/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/"
+      ],
+      "link_text": "WASH - Water, Sanitation and Hygiene",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://crpg.info/wp-content/uploads/2024/07/Realizing-Access-to-Safe-Inclusive-Sustainable-and-Climate-Resillient-Drinking-Water-Sanitation-and-Hygiene-for-All.pdf": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/"
+      ],
+      "link_text": "DOWNLOAD PROCEEDINGS",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://bit.ly/IsWASH2023": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/"
+      ],
+      "link_text": "REGISTRATION LINK",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://crpg.info/wp-content/uploads/2023/03/iswash.pdf": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/"
+      ],
+      "link_text": "click here",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://crpg.info/wp-content/uploads/2023/02/Accepted-Abstracts.pdf": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/"
+      ],
+      "link_text": "click here",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://crpg.info/wp-content/uploads/2022/12/1x.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/wash/",
+        "https://movanet.github.io/crpg-website/tags/water-resources/"
+      ],
+      "link_text": "IsWASH 2023 Banner",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/multi-stakeholder/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2024/11/multi-stakeholder-position-paper-on-indonesia-water-law-draft/",
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/"
+      ],
+      "link_text": "Multi-Stakeholder",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/multi-stakeholder/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/multi-stakeholder/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Climate Change Adaptation Strategies for Indonesian Coastal Communities",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/research/climate-adaptation-coastal/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/"
+      ],
+      "link_text": "Access the Full Study",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/climate-change/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/climate-change/"
+      ],
+      "link_text": "Climate Change",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/climate-change/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/climate-change/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/adaptation/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/adaptation/"
+      ],
+      "link_text": "Adaptation",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/adaptation/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/adaptation/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/coastal-communities/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/2024/10/climate-change-adaptation-strategies-for-indonesian-coastal-communities/",
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/"
+      ],
+      "link_text": "Coastal Communities",
+      "type": "href",
+      "tag": "a",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/tags/coastal-communities/index.xml": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/tags/coastal-communities/"
+      ],
+      "link_text": "Center for Regulation, Policy and Governance",
+      "type": "href",
+      "tag": "link",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/posts/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "View All Research",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/swa-mam-catalytic-program/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Learn More \u2192",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/ehrdd/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Learn More \u2192",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/koneksi/": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Learn More \u2192",
+      "type": "href",
+      "tag": "a",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/crpg-logo.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/",
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "CRPG Logo",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/images/research-water-law.svg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Multi-stakeholder Position Paper on Indonesia Water Law Draft",
+      "type": "image",
+      "tag": "img",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/images/research-climate.svg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Climate Change Adaptation Strategies for Indonesian Coastal Communities",
+      "type": "image",
+      "tag": "img",
+      "status": 404,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/WRI-300x193.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "World Resources Institute (WRI)",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/SWA-Logo.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Sanitation and Water for All (SWA)",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/unicef.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "UNICEF",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/uod_logo.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "University of Dundee",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/ausaid.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "AusAID",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/bappenas.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "BAPPENAS",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/kemenlhk.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Ministry of Environment and Forestry (KLHK)",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/hivos-logo.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Hivos",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/ogp-logo.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Open Government Partnership (OGP)",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/unesco-dundee.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "UNESCO Dundee",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/logo-Petrolab-300x69.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Petrolab",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/Biodiversity-Research-Institute-Logo-300x150.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Biodiversity Research Institute",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/Ecoverse_Hi_Res-1-1-1.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Ecoverse",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/SNV-1.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "SNV",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/gwp-sea-logo.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Global Water Partnership Southeast Asia",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/waterlex-logo.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "WaterLex",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/smec-logo.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "SMEC",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/isf.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "ISF / Engineers Without Borders",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/ipen-logo.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "International POPs Elimination Network (IPEN)",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/jejaringampl.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Jejaring AMPL",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/unido2.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "UNIDO",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/Kemenlu-Logo-300x168.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Ministry of Foreign Affairs Indonesia",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/Logo-Koneksi-300x100.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Koneksi",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/Hukum-Online-1.jpg": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Hukum Online",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    },
+    "https://movanet.github.io/crpg-website/images/Nexus-Logo-300x111.png": {
+      "found_on": [
+        "https://movanet.github.io/crpg-website/"
+      ],
+      "link_text": "Nexus",
+      "type": "image",
+      "tag": "img",
+      "status": 200,
+      "error": null
+    }
+  }
+}

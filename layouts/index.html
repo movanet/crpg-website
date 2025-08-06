@@ -13,9 +13,9 @@
     <h1 class="md-hero-title">{{ .Site.Title }}</h1>
     <p class="md-hero-subtitle">{{ .Description }}</p>
     <div class="hero-buttons">
-      <a href="/research/" class="md-button md-button-filled">Explore Research</a>
-      <a href="/publications/" class="md-button md-button-outlined">View Publications</a>
-      <a href="/profile/" class="md-button md-button-outlined">About CRPG</a>
+      <a href="{{ "research/" | relURL }}" class="md-button md-button-filled">Explore Research</a>
+      <a href="{{ "publications/" | relURL }}" class="md-button md-button-outlined">View Publications</a>
+      <a href="{{ "profile/" | relURL }}" class="md-button md-button-outlined">About CRPG</a>
     </div>
   </div>
 </section>
@@ -23,16 +23,16 @@
 <!-- Navigation (Material Design) -->
 <nav class="md-nav" role="navigation" aria-label="Main navigation">
   <div class="md-nav-content">
-    <a href="/" class="md-nav-brand" style="display: flex; align-items: center;">
+    <a href="{{ "/" | relURL }}" class="md-nav-brand" style="display: flex; align-items: center;">
       <img src="{{ "images/crpg-logo.png" | relURL }}" alt="CRPG Logo" class="site-logo">
     </a>
     <ul class="md-nav-menu">
-      <li><a href="/profile/" class="md-nav-item">Profile</a></li>
-      <li><a href="/program/" class="md-nav-item">Programs</a></li>
-      <li><a href="/research/" class="md-nav-item">Research</a></li>
-      <li><a href="/publications/" class="md-nav-item">Publications</a></li>
-      <li><a href="/events/" class="md-nav-item">Events</a></li>
-      <li><a href="/gallery/" class="md-nav-item">Gallery</a></li>
+      <li><a href="{{ "profile/" | relURL }}" class="md-nav-item">Profile</a></li>
+      <li><a href="{{ "program/" | relURL }}" class="md-nav-item">Programs</a></li>
+      <li><a href="{{ "research/" | relURL }}" class="md-nav-item">Research</a></li>
+      <li><a href="{{ "publications/" | relURL }}" class="md-nav-item">Publications</a></li>
+      <li><a href="{{ "events/" | relURL }}" class="md-nav-item">Events</a></li>
+      <li><a href="{{ "gallery/" | relURL }}" class="md-nav-item">Gallery</a></li>
     </ul>
     <div class="nav-actions">
       {{ partial "search.html" . }}
@@ -54,13 +54,13 @@
   </div>
   <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/profile/">Profile</a></li>
-      <li><a href="/program/">Programs</a></li>
-      <li><a href="/research/">Research</a></li>
-      <li><a href="/publications/">Publications</a></li>
-      <li><a href="/events/">Events</a></li>
-      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="{{ "/" | relURL }}">Home</a></li>
+      <li><a href="{{ "profile/" | relURL }}">Profile</a></li>
+      <li><a href="{{ "program/" | relURL }}">Programs</a></li>
+      <li><a href="{{ "research/" | relURL }}">Research</a></li>
+      <li><a href="{{ "publications/" | relURL }}">Publications</a></li>
+      <li><a href="{{ "events/" | relURL }}">Events</a></li>
+      <li><a href="{{ "gallery/" | relURL }}">Gallery</a></li>
     </ul>
   </nav>
 </div>
@@ -94,7 +94,7 @@
       {{ end }}
     </div>
     <div class="tc mt4">
-      <a href="/posts/" class="md-button md-button-filled">View All Research</a>
+      <a href="{{ "posts/" | relURL }}" class="md-button md-button-filled">View All Research</a>
     </div>
   </div>
 </section>
@@ -139,7 +139,7 @@
           <p class="md-card-description">
             Supporting water, sanitation and hygiene initiatives through multi-stakeholder collaboration and evidence-based policy development.
           </p>
-          <a href="/swa-mam-catalytic-program/" class="link dim blue">Learn More →</a>
+          <a href="{{ "swa-mam-catalytic-program/" | relURL }}" class="link dim blue">Learn More →</a>
         </div>
       </article>
       <article class="md-card">
@@ -148,7 +148,7 @@
           <p class="md-card-description">
             Environmental Human Rights Due Diligence program promoting sustainable business practices and environmental protection.
           </p>
-          <a href="/ehrdd/" class="link dim blue">Learn More →</a>
+          <a href="{{ "ehrdd/" | relURL }}" class="link dim blue">Learn More →</a>
         </div>
       </article>
       <article class="md-card">
@@ -157,7 +157,7 @@
           <p class="md-card-description">
             Connecting stakeholders through knowledge exchange workshops on critical policy issues and sustainable development.
           </p>
-          <a href="/koneksi/" class="link dim blue">Learn More →</a>
+          <a href="{{ "koneksi/" | relURL }}" class="link dim blue">Learn More →</a>
         </div>
       </article>
     </div>

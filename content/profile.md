@@ -59,4 +59,4 @@ Our work focuses on the intersection of regulation, policy, and governance, with
 
 ## Corporate Portfolio
 
-[Download Our Portfolio](https://crpg.info/wp-content/uploads/2023/07/Corporate-Profile-CRPG-2023.pdf) (PDF)
+[Download Our Portfolio]({{ "/pdfs/Corporate-Profile-CRPG-2023.pdf" | relURL }}) (PDF)

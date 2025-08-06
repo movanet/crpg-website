@@ -9,7 +9,7 @@ theme = "ananke"  # Temporary theme, will be replaced with Hugo Blox
 [params]
   custom_css = ["css/custom.css"]
   favicon = ""
-  site_logo = ""
+  site_logo = "images/crpg-logo.png"
   description = "Center for Regulation, Policy and Governance - Research and policy analysis for sustainable development"
   facebook = ""
   twitter = ""

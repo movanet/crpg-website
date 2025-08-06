@@ -40,10 +40,21 @@ main article {
 
 /* Fix partner logo sizing */
 .partner-logo {
-  max-height: 80px;
-  width: auto;
+  max-height: 60px !important;
+  width: auto !important;
+  max-width: 150px !important;
   object-fit: contain;
   margin: 0 1rem;
+}
+
+/* Additional logo fixes for consistency */
+.site-logo,
+.md-nav-brand img,
+.mobile-menu-logo {
+  height: 45px !important;
+  width: auto !important;
+  max-width: 200px !important;
+  object-fit: contain;
 }
 
 /* Fix navigation spacing */

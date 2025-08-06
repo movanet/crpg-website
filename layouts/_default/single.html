@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="content-wrapper">
+  <article class="prose">
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+    
+    {{ if or .NextInSection .PrevInSection }}
+    <nav class="article-navigation">
+      {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.RelPermalink }}" class="nav-prev">
+          ← {{ .PrevInSection.Title }}
+        </a>
+      {{ end }}
+      {{ if .NextInSection }}
+        <a href="{{ .NextInSection.RelPermalink }}" class="nav-next">
+          {{ .NextInSection.Title }} →
+        </a>
+      {{ end }}
+    </nav>
+    {{ end }}
+  </article>
+</div>
+{{ end }}

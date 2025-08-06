@@ -1,0 +1,39 @@
+{{ $isHome := .IsHome }}
+{{ $title := .Title }}
+{{ $description := .Description }}
+
+{{ if $isHome }}
+<!-- Homepage Hero Section -->
+<section class="md-hero">
+  <div class="md-hero-content">
+    <h1 class="md-hero-title">{{ .Site.Title }}</h1>
+    <p class="md-hero-subtitle">{{ .Description }}</p>
+    <div class="hero-buttons">
+      <a href="{{ "research/" | relURL }}" class="md-button md-button-filled">Explore Research</a>
+      <a href="{{ "publications/" | relURL }}" class="md-button md-button-outlined">View Publications</a>
+      <a href="{{ "profile/" | relURL }}" class="md-button md-button-outlined">About CRPG</a>
+    </div>
+  </div>
+</section>
+{{ else }}
+<!-- Secondary Page Header -->
+<section class="page-header">
+  <div class="page-header-content">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ "/" | relURL }}" class="breadcrumb-link">Home</a>
+      {{ if .Parent }}
+        {{ if not .Parent.IsHome }}
+          <span class="breadcrumb-separator">/</span>
+          <a href="{{ .Parent.RelPermalink }}" class="breadcrumb-link">{{ .Parent.Title }}</a>
+        {{ end }}
+      {{ end }}
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">{{ $title }}</span>
+    </nav>
+    <h1 class="page-title">{{ $title }}</h1>
+    {{ if $description }}
+      <p class="page-description">{{ $description }}</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

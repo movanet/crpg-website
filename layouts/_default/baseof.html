@@ -31,7 +31,11 @@
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
     
-    <!-- Remove Ananke header - using Material Design navigation in main content -->
+    <!-- Include Navigation and Theme Toggle -->
+    {{ partial "site-navigation.html" . }}
+    
+    <!-- Include Page Header -->
+    {{ partial "page-header.html" . }}
     
     <main id="main-content">
         {{ block "main" . }}{{ end }}

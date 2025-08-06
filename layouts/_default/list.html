@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="content-wrapper">
+  <div class="list-content">
+    {{ if .Content }}
+      <div class="page-intro">
+        {{ .Content }}
+      </div>
+    {{ end }}
+    
+    <div class="list-grid">
+      {{ range .Paginator.Pages }}
+      <article class="list-item md-card">
+        <div class="md-card-content">
+          <h2 class="md-card-title">
+            <a href="{{ .RelPermalink }}" class="link dim">{{ .Title }}</a>
+          </h2>
+          {{ if .Description }}
+            <p class="md-card-description">{{ .Description }}</p>
+          {{ else if .Summary }}
+            <p class="md-card-description">{{ .Summary | truncate 200 }}</p>
+          {{ end }}
+          <div class="list-item-meta">
+            {{ if .Date }}
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</div>
+{{ end }}

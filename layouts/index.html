@@ -1,72 +1,6 @@
 {{ define "main" }}
 
-<!-- Theme Toggle -->
-<button class="theme-toggle" aria-label="Toggle theme">
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 11-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
-  </svg>
-</button>
-
-<!-- Material Design Hero Section -->
-<section class="md-hero">
-  <div class="md-hero-content">
-    <h1 class="md-hero-title">{{ .Site.Title }}</h1>
-    <p class="md-hero-subtitle">{{ .Description }}</p>
-    <div class="hero-buttons">
-      <a href="{{ "research/" | relURL }}" class="md-button md-button-filled">Explore Research</a>
-      <a href="{{ "publications/" | relURL }}" class="md-button md-button-outlined">View Publications</a>
-      <a href="{{ "profile/" | relURL }}" class="md-button md-button-outlined">About CRPG</a>
-    </div>
-  </div>
-</section>
-
-<!-- Navigation (Material Design) -->
-<nav class="md-nav" role="navigation" aria-label="Main navigation">
-  <div class="md-nav-content">
-    <a href="{{ "/" | relURL }}" class="md-nav-brand" style="display: flex; align-items: center;">
-      <img src="{{ "images/crpg-logo.png" | relURL }}" alt="CRPG Logo" class="site-logo">
-    </a>
-    <ul class="md-nav-menu">
-      <li><a href="{{ "profile/" | relURL }}" class="md-nav-item">Profile</a></li>
-      <li><a href="{{ "program/" | relURL }}" class="md-nav-item">Programs</a></li>
-      <li><a href="{{ "research/" | relURL }}" class="md-nav-item">Research</a></li>
-      <li><a href="{{ "publications/" | relURL }}" class="md-nav-item">Publications</a></li>
-      <li><a href="{{ "events/" | relURL }}" class="md-nav-item">Events</a></li>
-      <li><a href="{{ "gallery/" | relURL }}" class="md-nav-item">Gallery</a></li>
-    </ul>
-    <div class="nav-actions">
-      {{ partial "search.html" . }}
-    </div>
-    <!-- Mobile Menu Toggle -->
-    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu-overlay"></div>
-<div class="mobile-menu-panel">
-  <div class="mobile-menu-header">
-    <img src="{{ "images/crpg-logo.png" | relURL }}" alt="CRPG Logo" class="mobile-menu-logo">
-  </div>
-  <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile navigation">
-    <ul>
-      <li><a href="{{ "/" | relURL }}">Home</a></li>
-      <li><a href="{{ "profile/" | relURL }}">Profile</a></li>
-      <li><a href="{{ "program/" | relURL }}">Programs</a></li>
-      <li><a href="{{ "research/" | relURL }}">Research</a></li>
-      <li><a href="{{ "publications/" | relURL }}">Publications</a></li>
-      <li><a href="{{ "events/" | relURL }}">Events</a></li>
-      <li><a href="{{ "gallery/" | relURL }}">Gallery</a></li>
-    </ul>
-  </nav>
-</div>
-
 <!-- Latest Research Section -->
-<main id="main-content">
 <section class="section" aria-labelledby="research-heading">
   <div class="mw8 center ph3">
     <h2 class="section-title">Latest Research</h2>
@@ -99,7 +33,7 @@
   </div>
 </section>
 
-<!-- Focus Areas Section with Material Chips -->
+<!-- Focus Areas Section -->
 <section class="section bg-light">
   <div class="mw8 center ph3">
     <h2 class="section-title">Our Focus Areas</h2>
@@ -128,7 +62,7 @@
   </div>
 </section>
 
-<!-- Programs Section -->
+<!-- Active Programs Section -->
 <section class="section">
   <div class="mw8 center ph3">
     <h2 class="section-title">Active Programs</h2>
@@ -164,7 +98,7 @@
   </div>
 </section>
 
-<!-- About Section -->
+<!-- About CRPG Section -->
 <section class="section">
   <div class="mw8 center ph3">
     <div class="measure center tc">
@@ -222,7 +156,7 @@
   </div>
 </section>
 
-<!-- Call to Action Section -->
+<!-- Newsletter Section -->
 <section class="section">
   <div class="mw8 center ph3 tc">
     <h2 class="section-title">Stay Informed</h2>
@@ -235,6 +169,5 @@
     </form>
   </div>
 </section>
-</main>
 
 {{ end }}

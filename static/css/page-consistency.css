@@ -1,0 +1,342 @@
+/* Page Header Styles for Secondary Pages */
+.page-header {
+  background: linear-gradient(135deg, #E53935 0%, #FB8C00 100%);
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  padding: 3rem 1rem;
+}
+
+.page-header-content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.breadcrumb-link {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  opacity: 0.7;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  opacity: 0.6;
+}
+
+.breadcrumb-current {
+  font-weight: 500;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.page-description {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* Override Tachyons Classes for Consistency */
+.f1 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: var(--md-sys-color-on-surface) !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.f4 {
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+}
+
+.nested-copy-line-height {
+  line-height: 1.6 !important;
+}
+
+.nested-links a {
+  color: var(--md-sys-color-primary) !important;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nested-links a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Content Container Consistency */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+article.mw7 {
+  max-width: 48rem !important;
+  margin: 0 auto !important;
+}
+
+/* Ensure proper spacing */
+.ph3 {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.pv5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.mt4 {
+  margin-top: 2rem !important;
+}
+
+.mb4 {
+  margin-bottom: 2rem !important;
+}
+
+/* Typography Consistency */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--md-sys-color-on-surface);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
+
+/* Fix for first heading after page header */
+.page-header + main h1:first-child,
+.page-header + main article h1:first-child {
+  margin-top: 0;
+}
+
+/* List Styles */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Strong text */
+strong {
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface);
+}
+
+/* Code and Pre */
+code {
+  background: var(--md-sys-color-surface-variant);
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+pre {
+  background: var(--md-sys-color-surface-variant);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 4px solid var(--md-sys-color-primary);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+/* Active navigation item */
+.md-nav-item.active {
+  color: var(--md-sys-color-primary) !important;
+  font-weight: 600;
+}
+
+/* Ensure navigation is above page header */
+.md-nav {
+  position: relative;
+  z-index: 100;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .page-header {
+    min-height: 25vh;
+    padding: 2rem 1rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-description {
+    font-size: 1rem;
+  }
+  
+  .content-wrapper {
+    padding: 2rem 1rem;
+  }
+  
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+}
+
+/* Dark Mode Support for Page Header */
+body.dark-mode .page-header {
+  background: linear-gradient(135deg, #B71C1C 0%, #E65100 100%);
+}
+
+/* Remove any conflicting Ananke styles */
+.bg-white-90 { background: transparent !important; }
+.black-80 { color: var(--md-sys-color-on-surface) !important; }
+.gray { color: var(--md-sys-color-on-surface-variant) !important; }
+.mid-gray { color: var(--md-sys-color-on-surface-variant) !important; }
+
+/* Article Navigation */
+.article-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--md-sys-color-outline);
+}
+
+.nav-prev, .nav-next {
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-prev:hover, .nav-next:hover {
+  opacity: 0.8;
+}
+
+/* List Page Styles */
+.list-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-intro {
+  margin-bottom: 3rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.list-item {
+  height: 100%;
+}
+
+.list-item-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.read-more {
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Prose Content */
+.prose {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.article-content > * {
+  margin-bottom: 1.5rem;
+}
+
+.article-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Fix Ananke pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 3rem 0;
+}
+
+.page-item {
+  list-style: none;
+}
+
+.page-link {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--md-sys-color-outline);
+  border-radius: 4px;
+  color: var(--md-sys-color-on-surface);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.page-link:hover {
+  background: var(--md-sys-color-primary);
+  color: white;
+  border-color: var(--md-sys-color-primary);
+}
+
+.page-item.active .page-link {
+  background: var(--md-sys-color-primary);
+  color: white;
+  border-color: var(--md-sys-color-primary);
+}
